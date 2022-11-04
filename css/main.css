@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Raleway&display=swap');
 
 /* || RESET */
 * {
@@ -29,13 +29,14 @@ html {
 
 /* || GENERAL STYLES */
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     overflow-x: hidden;
     width: 100vw;
     height: 100vh;
+    background-color: #f5f5f5;
 }
 
 @keyframes fadeInAnimation {
@@ -47,7 +48,8 @@ body {
     }
 }
 
-header {    
+header {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -56,7 +58,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 100px;
-    height: 80px;
+    height: 70px;
     background-color: #1d4ed8;
     z-index: 1;
     transition: 0.6s;
@@ -101,7 +103,7 @@ header {
 }
 
 .nav-bar ul li:hover{
-    border-bottom: 3px solid #ffc414;/* ;
+    border-bottom: 2px solid #ffc414;/* ;
     background-color:#0034c2; */
 }
 
@@ -112,10 +114,12 @@ button.login {
     outline: none;
     padding: 12px 25px;
     color: #121212;
-    font-weight: bold;
-    font-size: 1rem;
+    font-weight: 600;
+    font-size: 0.9rem;
     cursor: pointer;
     margin-left: 5rem;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
 }
 
 button.login:hover {
@@ -188,6 +192,83 @@ button.login:hover {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.hero {
+    /* background: rgb(255, 14, 14); */
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero img {
+    width: 500px;
+    height: auto;
+}
+
+.hero-text {
+    position: relative;
+    top: -100px;
+}
+
+.hero p {
+    font-size: 3.5rem;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    color: #121212;
+}
+
+.btn-arrow {
+    margin-top: 2rem;
+}
+
+.btn-arrow a {
+    padding: 15px 25px;
+    background-color: #FFC414;
+    color: #121212;
+    font-weight: 600;
+}
+
+.btn-arrow img {
+    width: 90px;
+    height: auto;
+    position: absolute;
+    left: 90px;
+    top: 275px;
+}
+
+.why-us {
+    background: rgb(110, 14, 255);
+    height: 50vh;
+}
+
+.course {
+    background: rgb(0, 138, 150);
+    height: 100vh;
+}
+
+.campus {
+    background: rgb(4, 237, 66);
+    height: 60vh;
+}
+
+.faculty {
+    background: rgb(4, 66, 237);
+    height: 80vh;
+}
+
+footer {
+    background: rgb(255, 14, 14);
+    height: 30vh;
 }
 
 
@@ -308,6 +389,11 @@ button.login:hover {
         background: #dc2626;
         width: 40px;
     }
+
+    .hero img {
+        width: 300px;
+        height: auto;
+    }
 }
 
 @media screen and ((min-width: 768px) and (max-width: 901px)) {
@@ -427,7 +513,6 @@ button.login:hover {
     }
 }
 
-
 @media screen and ((min-width: 901px) and (max-width: 1023px)) {
     header {
         padding: 0 30px;
@@ -451,3 +536,10 @@ button.login:hover {
         margin-left: 1rem;
     }
 }
+
+/* @media screen and (min-width: 1024px) {
+    header {
+        display: none;
+        padding: 0 30px;
+    }
+} */

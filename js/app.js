@@ -1,3 +1,5 @@
+AOS.init();
+
 /* || Open Menu On Small Screen */
 const menuBtn = () => {
     const hamburger = document.querySelector('.hamburger');
