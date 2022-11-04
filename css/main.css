@@ -247,24 +247,221 @@ button.login:hover {
 }
 
 .why-us {
-    background: rgb(110, 14, 255);
-    height: 50vh;
+    background-color: rgb(222, 222, 222);
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.course {
-    background: rgb(0, 138, 150);
+.why-us h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.why-us-content {
+    width: 700px;
+    word-wrap: normal;
+}
+
+.why-us-content p {
+    text-align: justify;
+}
+
+.faculty-header {
+    padding-top: 2rem;
+}
+
+.faculty-header h3 {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+} 
+
+/* .course {
     height: 100vh;
+} */
+
+.course-header {
+    padding-top: 2rem;
+}
+
+.course-header h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+/* .l {
+    height: 2px;
+    width: 20%;
+    background-color: #1d4ed8;
+    margin: 0px auto;
+} */
+
+.course .list {
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin: 0px auto;
+}
+
+.course .list img {
+    border-radius: 5px;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.3);
+    margin: 1rem;
+}
+
+.see-more {
+    text-align: center;
+    margin: 1rem;
 }
 
 .campus {
-    background: rgb(4, 237, 66);
-    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background: #dedede;
 }
 
-.faculty {
-    background: rgb(4, 66, 237);
-    height: 80vh;
+.campus-header {
+    padding-top: 2rem;
+}   
+
+.campus h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    text-align: center;
 }
+
+.campus-list {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    margin: 0 0 3rem 0;
+    gap: 3rem;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    padding: 1.5rem;
+    background: white;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.card:hover {
+    transform: translateY(20px); 
+}
+
+.card:hover:before {
+    opacity: 1; 
+}
+
+.card:hover .info {
+    opacity: 1;
+    transform: translateY(0px); 
+}
+
+.card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0; 
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px; 
+}
+
+.card .info {
+    position: relative;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s; 
+}
+
+.card .info h1 {
+    margin: 0px; 
+}
+
+.card .info p {
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px; 
+}
+
+.faculty-list ul {
+    display: grid; 
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+}
+
+.faculty-list ul {
+    list-style: none;
+}
+
+/* .caption h4 {
+    font-size: 1rem;
+    color: #121212;
+}
+
+.caption p {
+    font-size: 0.8rem;
+    color: #121212;
+    background: #FFC414;
+}
+
+.control-box {
+    text-align: right;
+    width: 100%;
+    background: #000;
+    color: white;
+} */
 
 footer {
     background: rgb(255, 14, 14);

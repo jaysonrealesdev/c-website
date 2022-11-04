@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -58,21 +59,225 @@
                 <img src="images/10SCENE.png" alt="Hero Image" width="800" height="800">
             </div>
         </div>
+        
+        <div id="why" class="why-us" data-aos="zoom-in">
+            <div class="why-header">
+                <h3>Why Us?</h3>    
+            </div>
 
-        <div id="why" class="why-us" data-aos="fade-up">
-            <h3>Why Us?</h3>
+            <div class="why-us-content">
+                <p>
+                    The  school  is  committed  to  producing  morally  upright  graduates with  quality  education  and   equip  them  with  the  knowledge and skills essential for their dynamic responses to the challenges of the country and of the world.
+                </p>
+            </div>
         </div>
 
-        <div id="courses" class="course">
-            <h3>Courses Offered</h3>
+        <div id="courses" class="course" data-aos="fade-up">
+            <div class="course-header">
+                <h3>Courses Offered</h3>
+                <div class="l"></div>    
+            </div>
+
+            <div class="list" data-aos="fade-down" data-aos-easing="linear" ata-aos-duration="1500">
+                <div class="course-img">
+                    <img src="images/ba.jpg" alt="BA" width="300" height="200">
+                </div>
+                <div class="course-description">
+                    The Bachelor of Science in Business Administration (BSBA) is a four-year program which provides professional business and management education for those who would like to become entrepreneurs or pursue a career in any field of business such as economics, finance, human capital management, and marketing.
+                </div>
+                <div class="course-img">
+                    <img src="images/compeng.jpg" alt="BA" width="300" height="200">
+                </div>
+                <div class="course-description">
+                    Computer engineering is defined as the discipline that embodies the science and technology of design, construction, implementation, and maintenance of software and hardware components of modern computing systems and computer-controlled equipment.
+                </div>
+                <div class="course-img">
+                    <img src="images/it.jpg" alt="BA" width="300" height="200">
+                </div>
+                <div class="course-description">
+                    The Bachelor of Science in Information Technology (BSIT) program prepares students to be IT professionals who are able to perform installation, operation, development, maintenance and administration of computer applications.
+                </div>
+            </div>
+
+            <div class="see-more">
+                <a href="#">See more...</a>
+            </div>
         </div>
 
-        <div id="campus" class="campus">
-            <h3>Campus</h3>
+        <div class="campus" id="campus">
+            <div class="campus-header">
+                <h3>Campus</h3>
+                <div class="l"></div>    
+            </div>
+            <div class="campus-list" data-aos="flip-up">
+
+                <div class="campus-item card hidden">
+                    <img src="images/school1.jpg" alt="School 1" width="300" height="400">
+                    <div class="info">
+                        <h1>Albay <span>(Main Campus)</span></h1>
+                        <p>Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus.</p>
+                    </div>
+                </div>
+                
+                <div class="campus-item card hidden">
+                    <img src="images/school2.jpg" alt="School 1" width="300" height="400">
+                    <div class="info">
+                        <h1>Legaspi City <span>(Extension)</span></h1>
+                        <p>Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus.</p>
+                    </div>
+                </div>
+
+                <div class="campus-item card hidden">
+                    <img src="images/school3.jpg" alt="School 1" width="300" height="400">
+                    <div class="info">
+                        <h1>Ligao Campus</h1>
+                        <p>Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus.</p>
+                    </div>
+                </div>
+
+                <div class="campus-item card hidden">
+                    <img src="images/school4.jpg" alt="School 1" width="300" height="400">
+                    <div class="info">
+                        <h1>Polangui Campus</h1>
+                        <p>Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus.</p>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        
 
         <div id="faculty" class="faculty">
-            <h3>Faculty</h3>
+            <div class="faculty-header">
+                <h3>Faculty</h3>
+                <div class="l"></div>
+            </div>
+
+            <div class="faculty-list">
+                <div class="carousel slide" id="facultyCarousel">
+                    <div class="item active">
+                        <ul class="thumbnails">
+                            <li class="span3">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img src="images/ceo.jpg" width="300" height="200" alt="">
+                                    </a>
+                                </div>
+                                <!-- || CAPTION -->
+                                <div class="caption">
+                                    <h4>Faculty Name</h4>
+                                    <p>Position</p>
+                                    <a href="#">Read More</a>
+                                </div>
+                            </li>
+                            <li class="span3">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img src="images/ceo.jpg" width="300" height="200" alt="">
+                                    </a>
+                                </div>
+                                <!-- || CAPTION -->
+                                <div class="caption">
+                                    <h4>Faculty Name</h4>
+                                    <p>Position</p>
+                                    <a href="#">Read More</a>
+                                </div>
+                            </li>
+                            <li class="span3">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img src="images/ceo.jpg" width="300" height="200" alt="">
+                                    </a>
+                                </div>
+                                <!-- || CAPTION -->
+                                <div class="caption">
+                                    <h4>Faculty Name</h4>
+                                    <p>Position</p>
+                                    <a href="#">Read More</a>
+                                </div>
+                            </li>
+                            <li class="span3">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img src="images/ceo.jpg" width="300" height="200" alt="">
+                                    </a>
+                                </div>
+                                <!-- || CAPTION -->
+                                <div class="caption">
+                                    <h4>Faculty Name</h4>
+                                    <p>Position</p>
+                                    <a href="#">Read More</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- SLIDE 2 -->
+                    <div class="item">
+                        <ul class="thumbnails">
+                            <li class="span3">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img src="images/ceo.jpg" width="300" height="200" alt="">
+                                    </a>
+                                </div>
+                                <!-- || CAPTION -->
+                                <div class="caption">
+                                    <h4>Faculty Name</h4>
+                                    <p>Position</p>
+                                    <a href="#">Read More</a>
+                                </div>
+                            </li>
+                            <li class="span3">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img src="images/ceo.jpg" width="300" height="200" alt="">
+                                    </a>
+                                </div>
+                                <!-- || CAPTION -->
+                                <div class="caption">
+                                    <h4>Faculty Name</h4>
+                                    <p>Position</p>
+                                    <a href="#">Read More</a>
+                                </div>
+                            </li>
+                            <li class="span3">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img src="images/ceo.jpg" width="300" height="200" alt="">
+                                    </a>
+                                </div>
+                                <!-- || CAPTION -->
+                                <div class="caption">
+                                    <h4>Faculty Name</h4>
+                                    <p>Position</p>
+                                    <a href="#">Read More</a>
+                                </div>
+                            </li>
+                            <li class="span3">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img src="images/ceo.jpg" width="300" height="200" alt="">
+                                    </a>
+                                </div>
+                                <!-- || CAPTION -->
+                                <div class="caption">
+                                    <h4>Faculty Name</h4>
+                                    <p>Position</p>
+                                    <a href="#">Read More</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- CONTROLS -->
+                    <div class="control-box">
+                        <a href="" data-slide="prev" href="#facultyCarousel" class="carousel-control left"><i class="fa-sharp fa-solid fa-chevron-left"></i></a>
+                        <a href="" data-slide="next" href="#facultyCarousel" class="carousel-control right"><i class="fa-sharp fa-solid fa-chevron-right"></i></a>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
         <footer>
