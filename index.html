@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 </head>
 <body>
     <header class="header">
@@ -152,131 +153,35 @@
                 <h3>Faculty</h3>
                 <div class="l"></div>
             </div>
-
+            
             <div class="faculty-list">
-                <div class="carousel slide" id="facultyCarousel">
-                    <div class="item active">
-                        <ul class="thumbnails">
-                            <li class="span3">
-                                <div class="thumbnail">
-                                    <a href="#">
-                                        <img src="images/ceo.jpg" width="300" height="200" alt="">
-                                    </a>
-                                </div>
-                                <!-- || CAPTION -->
-                                <div class="caption">
-                                    <h4>Faculty Name</h4>
-                                    <p>Position</p>
-                                    <a href="#">Read More</a>
-                                </div>
-                            </li>
-                            <li class="span3">
-                                <div class="thumbnail">
-                                    <a href="#">
-                                        <img src="images/ceo.jpg" width="300" height="200" alt="">
-                                    </a>
-                                </div>
-                                <!-- || CAPTION -->
-                                <div class="caption">
-                                    <h4>Faculty Name</h4>
-                                    <p>Position</p>
-                                    <a href="#">Read More</a>
-                                </div>
-                            </li>
-                            <li class="span3">
-                                <div class="thumbnail">
-                                    <a href="#">
-                                        <img src="images/ceo.jpg" width="300" height="200" alt="">
-                                    </a>
-                                </div>
-                                <!-- || CAPTION -->
-                                <div class="caption">
-                                    <h4>Faculty Name</h4>
-                                    <p>Position</p>
-                                    <a href="#">Read More</a>
-                                </div>
-                            </li>
-                            <li class="span3">
-                                <div class="thumbnail">
-                                    <a href="#">
-                                        <img src="images/ceo.jpg" width="300" height="200" alt="">
-                                    </a>
-                                </div>
-                                <!-- || CAPTION -->
-                                <div class="caption">
-                                    <h4>Faculty Name</h4>
-                                    <p>Position</p>
-                                    <a href="#">Read More</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
 
-                    <!-- SLIDE 2 -->
-                    <div class="item">
-                        <ul class="thumbnails">
-                            <li class="span3">
-                                <div class="thumbnail">
-                                    <a href="#">
-                                        <img src="images/ceo.jpg" width="300" height="200" alt="">
-                                    </a>
-                                </div>
-                                <!-- || CAPTION -->
-                                <div class="caption">
-                                    <h4>Faculty Name</h4>
-                                    <p>Position</p>
-                                    <a href="#">Read More</a>
-                                </div>
-                            </li>
-                            <li class="span3">
-                                <div class="thumbnail">
-                                    <a href="#">
-                                        <img src="images/ceo.jpg" width="300" height="200" alt="">
-                                    </a>
-                                </div>
-                                <!-- || CAPTION -->
-                                <div class="caption">
-                                    <h4>Faculty Name</h4>
-                                    <p>Position</p>
-                                    <a href="#">Read More</a>
-                                </div>
-                            </li>
-                            <li class="span3">
-                                <div class="thumbnail">
-                                    <a href="#">
-                                        <img src="images/ceo.jpg" width="300" height="200" alt="">
-                                    </a>
-                                </div>
-                                <!-- || CAPTION -->
-                                <div class="caption">
-                                    <h4>Faculty Name</h4>
-                                    <p>Position</p>
-                                    <a href="#">Read More</a>
-                                </div>
-                            </li>
-                            <li class="span3">
-                                <div class="thumbnail">
-                                    <a href="#">
-                                        <img src="images/ceo.jpg" width="300" height="200" alt="">
-                                    </a>
-                                </div>
-                                <!-- || CAPTION -->
-                                <div class="caption">
-                                    <h4>Faculty Name</h4>
-                                    <p>Position</p>
-                                    <a href="#">Read More</a>
-                                </div>
-                            </li>
-                        </ul>
+                <div class="campus-item card hidden">
+                    <img src="images/ceo.jpg" alt="School 1" width="300" height="400">
+                    <div class="info">
+                        <h2>Faculty Name</h2>
+                        <h4>Position</h4>
                     </div>
-
-                    <!-- CONTROLS -->
-                    <div class="control-box">
-                        <a href="" data-slide="prev" href="#facultyCarousel" class="carousel-control left"><i class="fa-sharp fa-solid fa-chevron-left"></i></a>
-                        <a href="" data-slide="next" href="#facultyCarousel" class="carousel-control right"><i class="fa-sharp fa-solid fa-chevron-right"></i></a>
-                    </div>
-
                 </div>
+
+                <div class="campus-item card hidden">
+                    <img src="images/ceo.jpg" alt="School 1" width="300" height="400">
+                    <div class="info">
+                        <h2>Faculty Name</h2>
+                        <h4>Position</h4>
+                    </div>
+                </div>
+
+                <div class="campus-item card hidden">
+                    <img src="images/ceo.jpg" alt="School 1" width="300" height="400">
+                    <div class="info">
+                        <h2>Faculty Name</h2>
+                        <h4>Position</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="faculty" class="all trigger"><i class="fa-sharp fa-solid fa-arrow-right"></i> View All</a>
             </div>
         </div>
 
@@ -285,7 +190,7 @@
         </footer>
 
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="js/app.js" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
