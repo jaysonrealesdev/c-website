@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAT College, Inc.</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <header class="header">
+        <!-- Hello -->
+        <div class="logo">
+            <a href="/"><img src="images/catc-logo.jpg" alt="CATC Logo" width="60" height="60" class="brand-img"></a>
+        </div>
+        
+        <div class="hamburger">
+            <div class="line"></div>
+        </div>
+        
+        <nav class="nav-bar" id="nav-bar">
+            <ul class="nav">
+                <li><a href="/" class="active ">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#campus">Campus</a></li>
+                <li><a href="#why">Why Us?</a></li>
+                <li>
+                    <a onclick="myFunction()" class="dropbtn">How To?</a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">How To Enroll?</a>
+                        <hr>
+                        <a href="#">Scholarships</a>
+                        <a href="#">Requirements</a>
+                    </div>
+                </li>
+                <button class="login" onclick="enroll()">Enroll Now</button>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+
+        <div class="faculty-hero">
+            <img src="images/2 SCENE.png" alt="Hero Image" height="200" width="900">
+        </div>
+
+        <div class="total-course">
+            <h3>Courses Available</h3>
+
+            <div class="h-line">
+                <div class="h-line1"></div>
+                <div class="h-line2"></div>
+            </div>
+
+            <div class="total-course-list">
+
+                <form class="form-wrapper cf">
+                    <input type="text" id="search-input" placeholder="Search here..." required>
+                    <button type="submit">Search</button>
+              </form>
+
+              <ol>
+                <li class="list-group-item">
+                    Bachelor of Science in Business Administration Major in Financial Management (BSBA)
+                    <details>
+                        <summary>Read More</summary>
+                        <p> 
+                            The Bachelor of Science in Business Administration program offers a wide range of technical majors, videlicet Business Economics, Financial Management, Human Resource Management, and Marketing Management. The program focuses on the interaction of the different functional areas of business. It equips scholars with specialized and practical knowledge in making informed business opinions.
+                        </p>
+                    </details>
+                </li>
+                <li class="list-group-item">
+                    Bachelor of Science in Business Administration Major in Marketing Management (BSBA)
+                    <details>
+                        <summary>Read More</summary>
+                        <p> 
+                            The Bachelor of Science in Business Administration program offers a wide range of technical majors, videlicet Business Economics, Financial Management, Human Resource Management, and Marketing Management. The program focuses on the interaction of the different functional areas of business. It equips scholars with specialized and practical knowledge in making informed business opinions.
+                        </p>
+                    </details>
+                </li>
+                <li class="list-group-item">
+                    Bachelor of Science in Office Administration Major in Financial Management (BS0A)
+                    <details>
+                        <summary>Read More</summary>
+                        <p> 
+                            The Bachelor of Science in Business Administration program offers a wide range of technical majors, videlicet Business Economics, Financial Management, Human Resource Management, and Marketing Management. The program focuses on the interaction of the different functional areas of business. It equips scholars with specialized and practical knowledge in making informed business opinions.
+                        </p>
+                    </details>
+                </li>
+                <li class="list-group-item">
+                    Bachelor of Science in Office Administration Major in Marketing Management (BSOA)
+                    <details>
+                        <summary>Read More</summary>
+                        <p> 
+                            The Bachelor of Science in Business Administration program offers a wide range of technical majors, videlicet Business Economics, Financial Management, Human Resource Management, and Marketing Management. The program focuses on the interaction of the different functional areas of business. It equips scholars with specialized and practical knowledge in making informed business opinions.
+                        </p>
+                    </details>
+                </li>
+                <li class="list-group-item">
+                    Bachelor of Science in Engineering Technology Major in Electronics Technology (BSET)
+                    <details>
+                        <summary>Read More</summary>
+                        <p> 
+                            The Bachelor of Science in Business Administration program offers a wide range of technical majors, videlicet Business Economics, Financial Management, Human Resource Management, and Marketing Management. The program focuses on the interaction of the different functional areas of business. It equips scholars with specialized and practical knowledge in making informed business opinions.
+                        </p>
+                    </details>
+                </li>
+                <li class="list-group-item">
+                    Bachelor of Science in Engineering Technology Major in Automotive Technology (BSET)
+                    <details>
+                        <summary>Read More</summary>
+                        <p> 
+                            The Bachelor of Science in Business Administration program offers a wide range of technical majors, videlicet Business Economics, Financial Management, Human Resource Management, and Marketing Management. The program focuses on the interaction of the different functional areas of business. It equips scholars with specialized and practical knowledge in making informed business opinions.
+                        </p>
+                    </details>
+                </li>
+                <li class="list-group-item">
+                    Bachelor in Technical-Vocational Teacher Education Major in Electronics Technology (BTVTED)
+                    <details>
+                        <summary>Read More</summary>
+                        <p> 
+                            The Bachelor of Science in Business Administration program offers a wide range of technical majors, videlicet Business Economics, Financial Management, Human Resource Management, and Marketing Management. The program focuses on the interaction of the different functional areas of business. It equips scholars with specialized and practical knowledge in making informed business opinions.
+                        </p>
+                    </details>
+                </li>
+                <li class="list-group-item">
+                    Bachelor in Technical-Vocational Teacher Education Major in Automotive Technology (BTVTED)
+                    <details>
+                        <summary>Read More</summary>
+                        <p> 
+                            The Bachelor of Science in Business Administration program offers a wide range of technical majors, videlicet Business Economics, Financial Management, Human Resource Management, and Marketing Management. The program focuses on the interaction of the different functional areas of business. It equips scholars with specialized and practical knowledge in making informed business opinions.
+                        </p>
+                    </details>
+                </li>
+
+                <li class="list-group-item">
+                    Bachelor of Science in Computer Engineering (BSCpE)
+                    <details>
+                        <summary>Read More</summary>
+                        <p> 
+                            The Bachelor of Science in Business Administration program offers a wide range of technical majors, videlicet Business Economics, Financial Management, Human Resource Management, and Marketing Management. The program focuses on the interaction of the different functional areas of business. It equips scholars with specialized and practical knowledge in making informed business opinions.
+                        </p>
+                    </details>
+                </li>
+                <li class="list-group-item">
+                    Bachelor of Science in Electrical Engineering (BSEE)
+                    <details>
+                        <summary>Read More</summary>
+                        <p> 
+                            The Bachelor of Science in Business Administration program offers a wide range of technical majors, videlicet Business Economics, Financial Management, Human Resource Management, and Marketing Management. The program focuses on the interaction of the different functional areas of business. It equips scholars with specialized and practical knowledge in making informed business opinions.
+                        </p>
+                    </details>
+                </li>
+                <li class="list-group-item">
+                    Bachelor of Science in Criminology (BSCRIM)
+                    <details>
+                        <summary>Read More</summary>
+                        <p> 
+                            The Bachelor of Science in Business Administration program offers a wide range of technical majors, videlicet Business Economics, Financial Management, Human Resource Management, and Marketing Management. The program focuses on the interaction of the different functional areas of business. It equips scholars with specialized and practical knowledge in making informed business opinions.
+                        </p>
+                    </details>
+                </li>
+                <li class="list-group-item">
+                    Bachelor of Science in Industrial Security Management (BSISM)
+                    <details>
+                        <summary>Read More</summary>
+                        <p> 
+                            The Bachelor of Science in Business Administration program offers a wide range of technical majors, videlicet Business Economics, Financial Management, Human Resource Management, and Marketing Management. The program focuses on the interaction of the different functional areas of business. It equips scholars with specialized and practical knowledge in making informed business opinions.
+                        </p>
+                    </details>
+                </li>
+                <li class="list-group-item">
+                    Bachelor of Science in Information Technology (BSIT)
+                    <details>
+                        <summary>Read More</summary>
+                        <p> 
+                            The Bachelor of Science in Business Administration program offers a wide range of technical majors, videlicet Business Economics, Financial Management, Human Resource Management, and Marketing Management. The program focuses on the interaction of the different functional areas of business. It equips scholars with specialized and practical knowledge in making informed business opinions.
+                        </p>
+                    </details>
+                </li>
+                <li class="list-group-item">
+                    Bachelor of Science in Computer Science (BSCS)
+                    <details>
+                        <summary>Read More</summary>
+                        <p> 
+                            The Bachelor of Science in Business Administration program offers a wide range of technical majors, videlicet Business Economics, Financial Management, Human Resource Management, and Marketing Management. The program focuses on the interaction of the different functional areas of business. It equips scholars with specialized and practical knowledge in making informed business opinions.
+                        </p>
+                    </details>
+                </li>
+                <li class="list-group-item">
+                    Bachelor of Science in Electronics Engineering (BSECE)
+                    <details>
+                        <summary>Read More</summary>
+                        <p> 
+                            The Bachelor of Science in Business Administration program offers a wide range of technical majors, videlicet Business Economics, Financial Management, Human Resource Management, and Marketing Management. The program focuses on the interaction of the different functional areas of business. It equips scholars with specialized and practical knowledge in making informed business opinions.
+                        </p>
+                    </details>
+                </li>
+                <li class="list-group-item">
+                    Associate in Computer Technology (ACT)
+                    <details>
+                        <summary>Read More</summary>
+                        <p> 
+                            The Bachelor of Science in Business Administration program offers a wide range of technical majors, videlicet Business Economics, Financial Management, Human Resource Management, and Marketing Management. The program focuses on the interaction of the different functional areas of business. It equips scholars with specialized and practical knowledge in making informed business opinions.
+                        </p>
+                    </details>
+                </li>
+                
+              </ol>
+
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="footer-image">
+                <img src="images/logo-small.png" alt="Footer Image" width="150" height="50">
+            </div>
+            <div class="wrapper">
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">ELMS</a></li>
+                        <li><a href="">Enrollment</a></li>
+                        <li><a href="">Library</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <ul>
+                        <li><span>Email: </span><a href = "mailto: catcollege_registrar@yahoo.com">catcollege_registrar@yahoo.com</a></li>
+                        <li><span>Phone number: </span><a href="tel:920-870-5327">0920-870-5327</a></li>
+                        <li><span>Telephone: </span><a href="tel:742-2500">742-2500</a></li>
+                        <li><span>Address: </span><address>Balintawak St,. Albay District, Legaspi City</address></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/app.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>

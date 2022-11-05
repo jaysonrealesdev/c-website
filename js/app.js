@@ -1,21 +1,21 @@
 AOS.init();
 
-const modal = document.querySelector(".modal");
-const trigger = document.querySelector(".trigger");
-const closeButton = document.querySelector(".close-button");
+document.querySelector('#search-input').addEventListener('input', filterList);
 
-function toggleModal() {
-    modal.classList.toggle("show-modal");
-}
+function filterList() {
+  const searchInput = document.querySelector('#search-input');
+  const filter = searchInput.value.toLowerCase();
+  const listItems = document.querySelectorAll(".list-group-item");
 
-function windowOnClick(event) {
-    if (event.target === modal) {
-        toggleModal();
+  listItems.forEach((item) => {
+    let text = item.textContent;
+    if(text.toLowerCase().includes(filter.toLowerCase())) {
+      item.style.display = '';
+    } else {
+      item.style.display = 'none';
     }
+  });
 }
-
-trigger.addEventListener("click", toggleModal);
-closeButton.addEventListener("click", toggleModal);
 
 /* || Open Menu On Small Screen */
 const menuBtn = () => {
