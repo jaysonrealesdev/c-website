@@ -766,7 +766,7 @@ footer ul {
  .total-course-list ol {
     list-style: circle;
     margin-top: -1.5rem;
-    /* list-style: none; */
+    list-style: none;
     
     /* background: rgb(141, 141, 141); */
     /* width: 500px; */
@@ -803,6 +803,7 @@ footer ul {
  .nested-list {
     margin: 1rem;
     padding: 1rem;
+    list-style: circle;
  }
 
  .requirement-list {
