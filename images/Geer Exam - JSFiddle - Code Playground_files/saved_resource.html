@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://jsfiddle.net/jaysonreales/nd50Lrue/117/embedded/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <meta http-equiv="edit-Type" edit="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Geer Exam - JSFiddle</title>
+
+      <meta name="robots" content="index, follow">
+      <meta name="googlebot" content="index, follow">
+
+      <script type="text/javascript">
+        var height
+        var force_height = null
+        var slug = "nd50Lrue"
+        var show_src = "//fiddle.jshell.net/jaysonreales/nd50Lrue/117/show/light/"
+        var resize_element_counter = 0
+        var shell_edit_url = "/jaysonreales/nd50Lrue/117/light/"
+
+      </script>
+
+      <script src="./highlight.pack.js.download"></script>
+      <script src="./embed.js.download"></script>
+      <link rel="stylesheet" media="screen" href="./embed-light.css">
+
+    <style type="text/css" media="screen">
+    /* */</style>
+
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1086.0" data-gr-ext-installed="" data-gr-ext-disabled="forever">
+    <div id="full-embed">
+        <header>
+          <h1>
+            <a href="https://jsfiddle.net/jaysonreales/nd50Lrue/117/" target="_blank">
+              <svg width="34" height="40">
+      <use xlink:href="//jsfiddle.net/sprite.svg#logo"></use>
+    </svg>Edit in JSFiddle
+            </a>
+          </h1>
+          <div id="actions">
+            <ul class="normalRes">
+                <li class="active">
+                  <a data-trigger-type="js" href="https://jsfiddle.net/jaysonreales/nd50Lrue/117/embedded/#JavaScript">JavaScript</a>
+                </li>
+                <li class="">
+                  <a data-trigger-type="html" href="https://jsfiddle.net/jaysonreales/nd50Lrue/117/embedded/#HTML">HTML</a>
+                </li>
+                <li class="">
+                  <a data-trigger-type="css" href="https://jsfiddle.net/jaysonreales/nd50Lrue/117/embedded/#CSS">CSS</a>
+                </li>
+                <li class="">
+                  <a data-trigger-type="result" href="https://jsfiddle.net/jaysonreales/nd50Lrue/117/embedded/#Result">Result</a>
+                </li>
+            </ul>
+            <div class="hl" style="left: 0px; width: 81.0875px;"></div>
+          </div>
+        </header>
+
+        <div id="tabs">
+              <pre class="tCont JavaScript active hljs"><span class="hljs-comment">//let x = prompt("Enter first number");</span>
+<span class="hljs-comment">//let y = prompt("Enter second number");</span>
+<span class="hljs-comment">//let z = Number(x) + Number(y);</span>
+<span class="hljs-comment">//alert("The sum of the two number is " + z);</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">leftTriangle</span>(<span class="hljs-params"></span>) </span>{
+<span class="hljs-keyword">let</span> input = <span class="hljs-built_in">Number</span>(prompt(<span class="hljs-string">"Enter number"</span>));
+<span class="hljs-keyword">let</span> str = <span class="hljs-string">''</span>;
+  <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i = <span class="hljs-number">1</span>; i &lt;= input; i++){
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> j = <span class="hljs-number">1</span>; j &lt;= i; j++){
+      str += <span class="hljs-string">'*'</span>;
+    }
+    str += <span class="hljs-string">"\n"</span>;
+  }
+  <span class="hljs-built_in">console</span>.log(str);
+}
+
+leftTriangle();
+
+<span class="hljs-comment">//Left Triangle</span>
+<span class="hljs-comment">/* let input = Number(prompt("Enter number"));
+let str = '';
+for(let i = 1; i &lt;= input; i++){
+  for(let j = 1; j &lt;= i; j++){
+    str += '*';
+  }
+  str += "\n";
+}
+console.log(str); */</span>
+
+<span class="hljs-comment">/* let input = Number(prompt("Enter number"))
+let str = "";
+for (let i = 1; i &lt;= input - 1; i++) {
+  for (let j = 0; j &lt; i; j++) {
+    str += " ";
+  }
+  for (let k = 0; k &lt; input - i; k++) {
+    str += "*";
+  }
+  str += "\n";
+} */</span>
+<span class="hljs-built_in">console</span>.log(str);
+
+<span class="hljs-comment">//Diamond Pattern</span>
+<span class="hljs-comment">/* let input = Number(prompt("Enter number"));
+let string = "";
+// Upside pyramid
+for (let i = 1; i &lt;= input; i++) {
+  // printing spaces
+  for (let j = input; j &gt; i; j--) {
+    string += " ";
+  }
+  // printing star
+  for (let k = 0; k &lt; i * 2 - 1; k++) {
+    string += "*";
+  }
+  string += "\n";
+}
+// downside pyramid
+for (let i = 1; i &lt;= input - 1; i++) {
+  // printing spaces
+  for (let j = 0; j &lt; i; j++) {
+    string += " ";
+  }
+  // printing star
+  for (let k = (input - i) * 2 - 1; k &gt; 0; k--) {
+    string += "*";
+  }
+  string += "\n";
+}
+console.log(string); */</span>
+
+
+</pre>
+              <pre class="tCont HTML hljs"></pre>
+              <pre class="tCont CSS hljs"></pre>
+              <div class="tCont result " id="result">
+              </div>
+        </div>
+    </div>
+    
+  
+
+</body></html>

@@ -576,8 +576,8 @@ footer ul {
 .footer-links {
     margin-right: 10rem;
     position: relative;
-    left: 0;
-    top: -10px;
+    left: 0;/* 
+    top: -10px; */
 }
 
 .footer-links a,
@@ -673,11 +673,11 @@ footer ul {
 }
 
 .form-wrapper input {
-    width: 330px;
+    width: 350px;
     height: 40px;
     padding: 10px 5px;
     border: 0;
-    background: #eee;
+    background: rgb(224, 224, 224);
     -moz-border-radius: 3px 0 0 3px;
     -webkit-border-radius: 3px 0 0 3px;
     border-radius: 3px 0 0 3px;      
@@ -758,9 +758,9 @@ footer ul {
      padding: 0;
  }
 
- .total-course-list ul {
-    margin-top: 1rem;
-    list-style: none;
+ .total-course-list ol {
+    margin-top: -1.5rem;
+    /* list-style: none; */
     
     /* background: rgb(141, 141, 141); */
     /* width: 500px; */
@@ -776,6 +776,27 @@ footer ul {
 
  details p {
     width: 700px;
+ }
+
+ .list-name-header {
+    background: #1d4ed8;
+    width: 100%;
+ }
+
+ .list-name-header h3 {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    color: #f5f5f5;
+ }
+
+ .shs .list-group-item {
+    list-style: none;
+ }
+
+ .nested-list {
+    margin: 1rem;
+    padding: 1rem;
  }
 
 
