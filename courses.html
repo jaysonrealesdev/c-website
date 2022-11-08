@@ -49,7 +49,9 @@
         </div>
 
         <div class="total-course">
-            <h3>Courses Available</h3>
+            <div class="title">
+                <h3>Courses Available</h3>
+            </div>
 
             <div class="h-line">
                 <div class="h-line1"></div>
@@ -302,189 +304,176 @@
 
                 <form class="form-wrapper cf">
                     <input type="text" id="search-input" placeholder="Search here..." required>
+                    <i class="fa-solid fa-xmark"></i>
                     <button type="submit">Search</button>
-              </form>
+                </form>
 
-              
+                <div class="c-list">
+                    <span id="empty" class="empty">No results...</span>
+                    <div class="college-courses">   
+                        <h3>College Courses - Legaspi Campus</h3>
+                        
+                        <ul>
+                            <li class="list-group-item">Bachelor of Science in Business Administration (BSBA) - 4 years</li>
+                            <li style="list-style: none;">
+                                <p style="font-weight: 800;" class="list-group-item">Majors:</p>
+                                <ul style="margin-left: 30px;">
+                                    <li class="list-group-item">Financial Management</li>
+                                    <li class="list-group-item">Marketing Management</li>
+                                </ul>
+                            </li>
 
-              <ol>
-                <div class="list-name-header" style="margin-top: 2.5rem;">
-                    <h3>College Courses - Legaspi Campus</h3>
+                            <li class="list-group-item">Bachelor of Science in Office Administration (BSOA) - 4 years</li>
+                            <li style="list-style: none;">
+                                <p style="font-weight: 800;" class="list-group-item">Majors:</p>
+                                <ul style="margin-left: 30px;">
+                                    <li class="list-group-item">Financial Management</li>
+                                    <li class="list-group-item">Marketing Management</li>
+                                </ul>
+                            </li>
+
+                            <li class="list-group-item">Bachelor of Science in Engineering Technology (BSET) - 4 years</li>
+                            <li style="list-style: none;">
+                                <p style="font-weight: 800;" class="list-group-item">Majors:</p>
+                                <ul style="margin-left: 30px;">
+                                    <li class="list-group-item">Automotive Technology</li>
+                                    <li class="list-group-item">Electronics Technology</li>
+                                </ul>
+                            </li>
+
+                            <li class="list-group-item">Bachelor in Technical-Vocational Teacher Education (BTVTED) - 4 years</li>
+                            <li style="list-style: none;">
+                                <p style="font-weight: 800;" class="list-group-item">Majors:</p>
+                                <ul style="margin-left: 30px;">
+                                    <li class="list-group-item">Automotive Technology</li>
+                                    <li class="list-group-item">Electronics Technology</li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item">Bachelor of Science in Computer Engineering (BSCpE) - 4 years</li>
+                            <li class="list-group-item">Bachelor of Science in Electrical Engineering (BSEE) - 4 years</li>
+                            <li class="list-group-item">Bachelor of Science in Criminology (BSCRIM) - 4 years</li>
+                            <li class="list-group-item">Bachelor of Science in Industrial Security Management (BSISM) - 4 years</li>
+                            <li class="list-group-item">Bachelor of Science in Information Technology (BSIT) - 4 years</li>
+                            <li class="list-group-item">Bachelor of Science in Computer Science (BSCS) - 4 years</li>
+                            <li class="list-group-item">Bachelor of Science in Electronics Engineering (BSECE) - 4 years</li>
+                            <li class="list-group-item">Associate in Computer Technology (ACT) - 2 years</li>
+                        </ul>
+                    </div>
+
+                    <div class="shs-courses">
+                        <h3>Senior High School (Grade 11- 12 )</h3>
+                        
+                        <ul>
+                            <li class="list-group-item">Academic Tracks</li>
+                            <li style="list-style: none;">
+                                <!-- <p style="font-weight: 800;">Majors:</p> -->
+                                <ul style="margin-left: 30px;">
+                                    <li class="list-group-item">General Academic Tracks (GAS)</li>
+                                    <li class="list-group-item">Accountancy, Business and Management (ABM)</li>
+                                    <li class="list-group-item">Science, Technology, Engineering and Mathematics (STEM)</li>
+                                    <li class="list-group-item">Humanities and Social Sciences (HUMMS)</li>
+                                </ul>
+                            </li>
+
+                            <li class="list-group-item">Technical-Vocational Livelihood Tracks</li>
+                            <li style="list-style: none;">
+                                <!-- <p style="font-weight: 800;">Majors:</p> -->
+                                <ul style="margin-left: 30px;">
+                                    <li class="list-group-item">Computer Programming NC III</li>
+                                    <li class="list-group-item">Computer System Servicing NC II</li>
+                                    <li class="list-group-item">Electronic Products Assembly & Servicing NC II</li>
+                                    <li class="list-group-item">Automotive Servicing NC II</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="polangui-c-courses">
+                        <h3>College Courses - Polangui Campus</h3>
+                        
+                        <ul>
+                            <li class="list-group-item">Bachelor of Science in Criminology (BSCRIM) - 4 years</li>
+                            <li class="list-group-item">Bachelor of Science in Engineering Technology (BSET) - 4 years</li>
+                            <li style="list-style: none;" class="list-group-item">
+                                <p style="font-weight: 800;" class="list-group-item">Majors:</p>
+                                <ul style="margin-left: 30px;">
+                                    <li class="list-group-item">Automotive Technology</li>
+                                    <li class="list-group-item">Electronics Technology</li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item">Associate in Computer Technology (ACT) - 2 years</li>
+                        </ul>
+                    </div>
+
+                    <div class="polangui-shs-courses">
+                        <h3>Senior High School (Grade 11- 12 )</h3>
+                        
+                        <ul>
+                            <li class="list-group-item">Academic Tracks</li>
+                            <li style="list-style: none;">
+                                <!-- <p style="font-weight: 800;">Majors:</p> -->
+                                <ul style="margin-left: 30px;">
+                                    <li class="list-group-item">General Academic Tracks (GAS)</li>
+                                    <li class="list-group-item">Accountancy, Business and Management (ABM)</li>
+                                </ul>
+                            </li>
+
+                            <li class="list-group-item">Technical-Vocational Livelihood Tracks</li>
+                            <li style="list-style: none;" class="list-group-item">
+                                <!-- <p style="font-weight: 800;">Majors:</p> -->
+                                <ul style="margin-left: 30px;">
+                                    <li class="list-group-item">Computer System Servicing NC II</li>
+                                    <li class="list-group-item">Electronic Products Assembly & Servicing NC II</li>
+                                    <li class="list-group-item">Automotive Servicing NC II</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="ligao-c-courses">
+                        <h3>College Courses - Ligao Campus</h3>
+                        
+                        <ul>
+                            <li class="list-group-item">Bachelor in Technical-Vocational Teacher Education (BTVTED) - 4 years</li>
+                            <li style="list-style: none;">
+                                <p style="font-weight: 800;" class="list-group-item">Majors:</p>
+                                <ul style="margin-left: 30px;">
+                                    <li class="list-group-item">Automotive Technology</li>
+                                    <li class="list-group-item">Electronics Technology</li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item">Associate in Computer Technology (ACT) - 2 years</li>
+                        </ul>
+                    </div>
+
+                    <div class="ligao-shs-courses">
+                        <h3>Senior High School (Grade 11- 12 )</h3>
+                        
+                        <ul>
+                            <li class="list-group-item">Academic Tracks</li>
+                            <li style="list-style: none;">
+                                <!-- <p style="font-weight: 800;">Majors:</p> -->
+                                <ul style="margin-left: 30px;">
+                                    <li class="list-group-item">General Academic Tracks (GAS)</li>
+                                    <li class="list-group-item">Accountancy, Business and Management (ABM)</li>
+                                </ul>
+                            </li>
+
+                            <li class="list-group-item">Technical-Vocational Livelihood Tracks</li>
+                            <li style="list-style: none;">
+                                <!-- <p style="font-weight: 800;">Majors:</p> -->
+                                <ul style="margin-left: 30px;">
+                                    <li class="list-group-item">Computer Programming NC III</li>
+                                    <li class="list-group-item">Computer System Servicing NC II</li>
+                                    <li class="list-group-item">Electronic Products Assembly & Servicing NC II</li>
+                                    <li class="list-group-item">Automotive Servicing NC II</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <li class="list-group-item">
-                    Bachelor of Science in Business Administration Major in Financial Management (BSBA) - 4 years
-                    <ol class="nested-list">
-                        <li>Major in Financial Management</li>
-                        <li>Major in Marketing Management</li>
-                    </ol>
-                    
-                </li>
-                <li class="list-group-item" style="margin-top: -2rem;">
-                    Bachelor of Science in Office Administration (BSOA) - 4 years
-                    <ol class="nested-list">
-                        <li>Major in Financial Management</li>
-                        <li>Major in Marketing Management</li>
-                    </ol>
-                    
-                </li>
-                <li class="list-group-item" style="margin-top: -2rem;">
-                    Bachelor of Science in Engineering Technology (BSET) - 4 years
-                    <ol class="nested-list">
-                        <li>Major in Automotive Technology</li>
-                        <li>Major in Electronics Technology</li>
-                    </ol>
-                    
-                </li>
-                <li class="list-group-item" style="margin-top: -2rem;">
-                    Bachelor in Technical-Vocational Teacher Education (BTVTED) - 4 years
-                    <ol class="nested-list">
-                        <li>Major in Automotive Technology</li>
-                        <li>Major in Electronics Technology</li>
-                    </ol>
-                    
-                </li>
-
-                <li class="list-group-item" style="margin-top: -2rem;">
-                    Bachelor of Science in Computer Engineering (BSCpE) - 4 years
-                    
-                </li>
-                <li class="list-group-item">
-                    Bachelor of Science in Electrical Engineering (BSEE) - 4 years
-                    
-                </li>
-                <li class="list-group-item">
-                    Bachelor of Science in Criminology (BSCRIM) - 4 years
-                    
-                </li>
-                <li class="list-group-item">
-                    Bachelor of Science in Industrial Security Management (BSISM) - 4 years
-                    
-                </li>
-                <li class="list-group-item">
-                    Bachelor of Science in Information Technology (BSIT) - 4 years
-                    
-                </li>
-                <li class="list-group-item">
-                    Bachelor of Science in Computer Science (BSCS) - 4 years
-                    
-                </li>
-                <li class="list-group-item">
-                    Bachelor of Science in Electronics Engineering (BSECE) - 4 years
-                    
-                </li>
-                <li class="list-group-item">
-                    Associate in Computer Technology (ACT) - 2 years
-                    
-                </li>
-
-                <div class="list-name-header">
-                    <h3>Senior High School (Grade 11 - 12)</h3>
-                </div>
-
-                <li class="list-group-item" style="list-style: none;">
-                    <p style="font-weight: 800;">Academic Tracks</p>
-                    <ol class="nested-list">
-                        <li>General Academic Tracks (GAS)</li>
-                        <li>Accountancy, Business and Management (ABM)</li>
-                        <li>Science, Technology, Engineering and Mathematics (STEM)</li>
-                        <li>Humanities and Social Sciences (HUMMS)</li>
-                    </ol>
-                </li>
-                <li class="list-group-item" style="list-style: none; margin-top: -2.3rem;">
-                    <p style="font-weight: 800;">Technical-Vocational Livelihood Tracks</p>
-                    <ol class="nested-list">
-                        <li>Computer Programming NC III</li>
-                        <li>Computer System Servicing NC II</li>
-                        <li>Electronic Products Assembly & Servicing NC II</li>
-                        <li>Automotive Servicing NC II</li>
-                    </ol>
-                </li>
-
-                <div class="list-name-header" style="margin-top: -1.5rem;">
-                    <h3>College Courses - Polangui Campus</h3>
-                </div>
-
-                <li class="list-group-item">
-                    Bachelor of Science in Criminology (BSCRIM) - 4 years
-                </li>
-
-                <li class="list-group-item">
-                    Bachelor of Science in Engineering Technology (BSET) - 4 years
-                    <ol class="nested-list">
-                        <li>Major in Automotive Technology</li>
-                        <li>Major in Electronics Technology</li>
-                    </ol>
-                </li>
-
-                <li class="list-group-item" style="margin-top: -2.3rem;">
-                    Associate in Computer Technology (ACT) - 2 years
-                </li>
-                
-                <div class="list-name-header">
-                    <h3>Senior High School (Grade 11- 12 )</h3>
-                </div>
-
-                <li class="list-group-item" style="list-style: none;">
-                    <p style="font-weight: 800;">Academic Tracks</p>
-                    <ol class="nested-list">
-                        <li>General Academic Tracks (GAS)</li>
-                        <li>Accountancy, Business and Management (ABM)</li>
-                    </ol>
-                </li>
-                <li class="list-group-item" style="list-style: none; margin-top: -2.3rem;">
-                    <p style="font-weight: 800;">Technical-Vocational Livelihood Tracks</p>
-                    <ol class="nested-list">
-                        <li>Computer System Servicing NC II</li>
-                        <li>Electronic Products Assembly & Servicing NC II</li>
-                        <li>Automotive Servicing NC II</li>
-                    </ol>
-                </li>
-
-                <div class="list-name-header" style="margin-top: -1.5rem;">
-                    <h3>College Courses - Ligao Campus</h3>
-                </div>
-
-                <li class="list-group-item">
-                    Bachelor in Technical-Vocational Teacher Education Major in Electronics Technology (BTVTED) - 4 years
-                </li>
-                
-                <li class="list-group-item">
-                    Bachelor of Science in Engineering Technology (BSET) - 4 years
-                    <ol class="nested-list">
-                        <li>Major in Automotive Technology</li>
-                        <li>Major in Electronics Technology</li>
-                    </ol>
-                </li>
-
-                <li class="list-group-item" style="margin-top: -2.3rem;">
-                    Associate in Computer Technology (ACT) - 2 years
-                </li>
-                
-                <div class="list-name-header">
-                    <h3>Senior High School (Grade 11- 12 )</h3>
-                </div>
-
-                <li class="list-group-item" style="list-style: none;">
-                    <p style="font-weight: 800;">Academic Tracks</p>
-                    <ol class="nested-list">
-                        <li>General Academic Tracks (GAS)</li>
-                        <li>Accountancy, Business and Management (ABM)</li>
-                    </ol>
-                </li>
-                <li class="list-group-item" style="list-style: none; margin-top: -2.3rem;">
-                    <p style="font-weight: 800;">Technical-Vocational Livelihood Tracks</p>
-                    <ol class="nested-list">
-                        <li>Computer Programming NC II</li>
-                        <li>Computer System Servicing NC II</li>
-                        <li>Electronic Products Assembly & Servicing NC II</li>
-                        <li>Automotive Servicing NC II</li>
-                    </ol>
-                </li>
-
-              </ol>
 
             </div>
-
         </div>
 
         <footer>
