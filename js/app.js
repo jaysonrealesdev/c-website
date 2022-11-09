@@ -70,12 +70,6 @@ window.onclick = function(event) {
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
-    
-showBackBtn();
-closeBtn();
-menuBtn();
-/* isOnline();
-isActive(); */
 
 document.querySelector('#search-input').addEventListener('input', filterList);
 
@@ -91,7 +85,43 @@ function filterList() {
       item.style.display = '';
     } else {
       item.style.display = 'none';
-      empty.style.display = "block";
     }
   });
 }
+
+$("#form-wrapper").each(function() {
+  
+  const input = $(this).find("#search-input");
+  const clear = $(this).find("#clear");
+
+  input.on("input", function(){
+    clear.toggle(!!this.value);
+  });
+  
+  clear.on("touchstart click", function(e) {
+    e.preventDefault();
+    input.val("").trigger("input");
+  });
+  
+});
+
+$(function() {  
+  $('.btn-6')
+    .on('mouseenter', function(e) {
+      var parentOffset = $(this).offset(),
+          relX = e.pageX - parentOffset.left,
+          relY = e.pageY - parentOffset.top;
+      $(this).find('span').css({top:relY, left:relX})
+    })
+    .on('mouseout', function(e) {
+      var parentOffset = $(this).offset(),
+          relX = e.pageX - parentOffset.left,
+          relY = e.pageY - parentOffset.top;
+      $(this).find('span').css({top:relY, left:relX})
+    });
+});
+    
+showBackBtn();
+closeBtn();
+menuBtn();
+  

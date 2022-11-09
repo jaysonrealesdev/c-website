@@ -302,15 +302,15 @@
 
             <div class="total-course-list">
 
-                <form class="form-wrapper cf">
+                <span class="form-wrapper cf" id="form-wrapper">
                     <input type="text" id="search-input" placeholder="Search here..." required>
-                    <i class="fa-solid fa-xmark"></i>
+                    <span class="clear" id="clear"b>&times;</span>
                     <button type="submit">Search</button>
-                </form>
+                </span>
 
                 <div class="c-list">
                     <span id="empty" class="empty">No results...</span>
-                    <div class="college-courses">   
+                    <div class="college-courses" data-aos>   
                         <h3>College Courses - Legaspi Campus</h3>
                         
                         <ul>
@@ -504,6 +504,7 @@
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/app.js" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
