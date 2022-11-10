@@ -1,8 +1,6 @@
-/* || Iniliaze Animate On Scroll (AOS) Library */
-AOS.init();
+AOS.init(); // Iniliaze Animate On Scroll (AOS) Library
 
-/* || Open Menu On Small Screen */
-const menuBtn = () => {
+const menuBtn = () => { // Open Menu On Small Screen
   const hamburger = document.querySelector('.hamburger');
   hamburger.onclick = function () { 
     const navBar = document.querySelector('.nav-bar');
@@ -10,8 +8,7 @@ const menuBtn = () => {
   }
 }
 
-/* || Animate Close Button */
-const closeBtn = () => {
+const closeBtn = () => { // Animate Close Button
   const menuBtn = document.querySelector('.hamburger');
   let menuOpen = false;
   menuBtn.addEventListener('click', function () {
@@ -25,7 +22,38 @@ const closeBtn = () => {
 });
 }
 
-/* || Show Back Button on Scroll */
+const enroll = () => {
+  window.location.href = "http://enroll.catcollege.edu.ph/enrollment/";
+}
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(event) { // Close the dropdown if the user clicks outside of it
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+// showBackBtn();
+closeBtn();
+menuBtn();
+
+
+
+
+
+
+// Show Back Button on Scroll
 // const showBackBtn = () => {
 //   let calcScrollValue = () => {
 //   let scrollProgress = document.getElementById("progress");
@@ -49,31 +77,4 @@ const closeBtn = () => {
 //   window.onscroll = calcScrollValue;
 //   window.onload = calcScrollValue;
 // }
-
-const enroll = () => {
-  window.location.href = "http://enroll.catcollege.edu.ph/enrollment/";
-}
-
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-
-    
-// showBackBtn();
-closeBtn();
-menuBtn();
   

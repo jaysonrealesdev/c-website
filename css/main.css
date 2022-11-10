@@ -175,12 +175,12 @@ button.login:hover {
 /* || SCROLLBAR CSS */
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 12px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: rgba(255, 255, 255, 0.5); 
 }
 
 /* Handle */
@@ -549,7 +549,8 @@ button.login:hover {
 } */
 
 footer {
-    background: #84a5ff;
+    box-shadow: 0 0 5px rgb(45, 45, 45);
+    background: #ececec;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -601,10 +602,10 @@ footer ul {
     display:table;
 }
 
-.cf:after{
+.cf:after {
   clear:both;
 }
-.cf{
+.cf {
   zoom:1;
 }
 
@@ -722,6 +723,7 @@ footer ul {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     margin-bottom: 1rem;
 }
 
@@ -769,7 +771,7 @@ footer ul {
    /* border: 1px solid rgba(102, 102, 102, 0.427); */
    /* height: 100vh; */
    padding: 2rem;
-
+   
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -934,13 +936,7 @@ table td {
     
 }
 
-
-
-
-
-
 /* || MEDIA QUERY */
-
 @media screen and (max-width: 768px) {
     header{
         padding: 0 30px;
@@ -1163,8 +1159,29 @@ table td {
        width: 100%;
     }
 
-    
-      
+    .total-course {
+        margin: o auto;
+        width: 100%;
+    }
+
+    .total-course h3,
+    .requirements .title, 
+    .scholarship .title{
+        letter-spacing: 1px;
+    }
+
+    .form-wrapper input {
+        width: 300px;
+        position: relative;
+        top: 0;
+        left: 20px;
+    }
+/* 
+    .footer-image,
+    .wrapper {
+        position: relative;
+        left: -100px;
+    } */
 
 }
 
@@ -1283,9 +1300,65 @@ table td {
         background: #dc2626;
         width: 40px;
     }
+
+    .hero-text {
+        top: -100px;
+        left: 50px;
+    }
+
+    .hero p {
+        font-size: 2rem;
+        font-weight: 900;
+        font-family: 'Montserrat', sans-serif;
+        color: #121212;
+    }
+
+    .hero img {
+        width: 25px;
+        height: auto;
+    }
+
+    .hero-img img {
+        width: 400px;
+        height: auto;
+        position: relative;
+        bottom: -95px;
+        right: 20px;
+    }
+
+    .why-us-content {
+        /* width: 700px; */
+        word-wrap: normal;
+        padding: 0 5rem;
+    }
+
+    .course-img img {
+        height: 400;
+    }
+
+    .campus-list {
+        grid-template-columns: auto auto;
+    }
+
+    .faculty-list {
+        grid-template-columns: auto auto;
+    }
+
+    footer,
+    .wrapper {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .footer-image,
+    .wrapper {
+        position: relative;
+        left: -115px;
+    }
+
 }
 
-@media screen and ((min-width: 901px) and (max-width: 1023px)) {
+@media screen and ((min-width: 902px) and (max-width: 1023px)) {
     header {
         padding: 0 30px;
         height: 70px;
@@ -1306,5 +1379,44 @@ table td {
         font-size: 1rem;
         cursor: pointer;
         margin-left: 1rem;
+    }
+
+    .hero-text {
+        top: -100px;
+        left: 50px;
+    }
+
+    .hero p {
+        font-size: 2.5rem;
+        font-weight: 900;
+        font-family: 'Montserrat', sans-serif;
+        color: #121212;
+    }
+
+    .hero img {
+        width: 25px;
+        height: auto;
+    }
+
+    .hero-img img {
+        width: 400px;
+        height: auto;
+        position: relative;
+        bottom: -95px;
+        right: 20px;
+    }
+
+    .why-us-content {
+        /* width: 700px; */
+        word-wrap: normal;
+        padding: 0 5rem;
+    }
+
+    .campus-list {
+        grid-template-columns: auto auto;
+    }
+
+    .faculty-list {
+        grid-template-columns: auto auto;
     }
 }
