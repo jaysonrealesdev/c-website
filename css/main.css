@@ -252,7 +252,8 @@ button.login:hover {
 }
 
 .why-us {
-    background-color: rgb(222, 222, 222);   
+    /* background-color: #dedede;    */
+    background-color: #ababab;   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -275,6 +276,48 @@ button.login:hover {
 
 .why-us-content p {
     text-align: justify;
+}
+
+.events {
+    background: #dadada;
+    padding: 2rem;
+}
+
+.events-header h3 {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.events-list  {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-flow: dense;
+    justify-items: stretch;
+    align-items: center;
+    align-content: space-between;
+    grid-gap: 1rem;
+}
+
+.events-list div {
+    align-self: center;
+}
+
+.events-list .item-1 {
+    background: rgb(16, 248, 16);
+    padding: 1rem;
+}
+
+.events-list .item-2 {
+    background: rgb(255, 18, 18);
+    padding: 1rem;
+}
+
+.events-list .item-3 {
+    background: rgb(33, 21, 255);
+    padding: 1rem;
 }
 
 .faculty-header {
