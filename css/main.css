@@ -278,8 +278,103 @@ button.login:hover {
     text-align: justify;
 }
 
+.systems {
+    width: 100vw;
+    max-width: 100%;
+    padding: 4rem;
+}
+
+.systems-header h3 {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* margin-bottom: 1rem; */
+}
+
+.systems-list  {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: space-between;
+    align-items: center;
+    align-content: center;
+    grid-gap: 1rem;
+    /* margin-top: 1rem; */
+}
+
+.systems-list h1,
+.systems-list p {
+    color: rgb(54, 54, 54);
+    text-align: center;
+}
+
+.systems-list div,
+.systems-list div .grid-item {
+    justify-self: center;
+    align-self: center;
+    place-self: center;
+}
+
+.grid-item {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.visit {
+    position: relative;
+    transition: .3s;
+    overflow: hidden;
+    padding: 10px 20px;
+    width: 200px;
+    margin: 1.5rem auto;
+    border: 2px solid #1d4ed8;
+    text-align: center;
+}
+
+.visit a {
+    padding: 10px 40px;
+    /* background: #1d4ed8; */
+    color: #f5f5f5;
+    letter-spacing: 1px;
+    /* box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3); */
+}
+
+.visit a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #1d4ed8;
+    z-index: -1;
+    transition: .5s;
+    bottom: -1px;
+    border-radius: 50% 50% 0 0;
+    height: 200%;
+  }
+
+  .visit a:hover::after {
+    height: 0;
+  }
+
+  .visit a:hover {
+    font-weight: 700;
+    color: #1d4ed8;;
+  }
+
+/* .visit a:hover {
+    background: #0c43db;
+    transition: 300ms ease-in-out;
+} */
+
+
 .events {
-    background: #dadada;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background: #000;
     padding: 2rem;
 }
 
@@ -293,7 +388,7 @@ button.login:hover {
 
 .events-list  {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto;
     grid-auto-flow: dense;
     justify-items: stretch;
     align-items: center;
@@ -303,6 +398,8 @@ button.login:hover {
 
 .events-list div {
     align-self: center;
+    width: 100vw;
+    height: 500px;;
 }
 
 .events-list .item-1 {
@@ -319,6 +416,29 @@ button.login:hover {
     background: rgb(33, 21, 255);
     padding: 1rem;
 }
+
+.promotion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.promotion-header h3 {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+/* .promotion iframe {
+    width: 1000px;
+    max-width: 1200px;
+    height: 542;
+    max-height: 600px;
+} */
 
 .faculty-header {
     padding-top: 2rem;
@@ -663,15 +783,15 @@ footer ul {
     align-items: center;
     justify-content: center;
     width: 100%;
-    box-shadow: 0 1px 3px rgb(45, 45, 45);
+    /* box-shadow: 0 1px 3px rgb(45, 45, 45); */
 }
 
 .form-wrapper input {
     width: 100%;
     height: 40px;
     padding: 10px 5px;
-    border: 0;
-    background: rgb(224, 224, 224);
+    border: 1px solid #1d4fd875;
+    background: #f5f5f5;
     -moz-border-radius: 3px 0 0 3px;
     -webkit-border-radius: 3px 0 0 3px;
     border-radius: 3px 0 0 3px;    
@@ -695,9 +815,10 @@ footer ul {
 .form-wrapper input:focus {
     outline: 0;
     background: #fff;
-    -moz-box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
-    -webkit-box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
-    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+        -moz-box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+        -webkit-box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+        box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+    border: 1px solid #1d4fd8;
 }
 
 .form-wrapper input::-webkit-input-placeholder {
@@ -1083,6 +1204,16 @@ table td {
     
 }
 
+.dev {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    padding: .01em;
+    background: #c6c6c6;
+}
+
 /* || MEDIA QUERY */
 @media screen and (max-width: 768px) {
     header{
@@ -1234,6 +1365,11 @@ table td {
         padding: 2rem 0.1em;
     }
 
+    .systems-list {
+        grid-template-columns: 1fr;
+        gap: 5rem;
+    }
+
     .course {
         padding: 2rem 5rem;
     }
@@ -1343,6 +1479,17 @@ table td {
         position: relative;
         top: 0;
         left: 20px;
+    }
+
+    .promotion {
+        margin-top: 2.5rem;
+    }
+
+    .promotion iframe {
+        width: 400px;
+        max-width: 500px;
+        height: -300;
+        max-height: 400px;
     }
 /* 
     .footer-image,
