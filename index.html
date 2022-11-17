@@ -12,6 +12,7 @@
     
 </head>
 <body>
+    <div id="cursor" class="cursor"></div>
     <header class="header">
         <!-- Hello -->
         <div class="logo">
@@ -47,7 +48,7 @@
         <div class="hero">
             <div class="hero-text">
                 <p class="p-1">Enroll Now and</p>
-                <p>Build <span id="career-text" style="color: #FE5244;">Solid Career</span> <br> with <span id="catc-text" style="color: #1D4ED8;">CAT College <span id="inc">, Inc.</span></span></p>
+                <p>Build <span id="career-text" class="career-text"></span> <br> with <span id="catc-text" style="color: #1D4ED8;">CAT College <span id="inc">, Inc.</span></span></p>
                 <p></p>
 
                 <div class="btn-arrow">
@@ -60,6 +61,8 @@
                 <img src="images/10SCENE.png" alt="Hero Image" width="800" height="800">
                 <!-- <iframe width="500" height="542" src="https://www.youtube.com/embed/IjQM6NRsAGA" title="CAT COLLEGE School Promotion | SHS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
             </div>
+
+            <a id="scroll-btn"></a>
         </div>
         
         <div id="why" class="why-us" data-aos="zoom-in">
@@ -122,9 +125,6 @@
             </div>
 
             <div class="events-list">
-                <div class="item-1">s</div>
-                <div class="item-2">s</div>
-                <div class="item-3">s</div>
                 <div class="item-1">s</div>
                 <div class="item-2">s</div>
                 <div class="item-3">s</div>
@@ -320,39 +320,12 @@
         <div class="dev">
             <p>	Copyright &copy; JNR - <script>document.write(new Date().getFullYear())</script></p>
         </div>
-        <!-- Messenger Chat Plugin Code -->
-        <div id="fb-root"></div>
 
-        <!-- Your Chat Plugin code -->
-        <div id="fb-customer-chat" class="fb-customerchat">
-        </div>
-
-        <script>
-        var chatbox = document.getElementById('fb-customer-chat');
-        chatbox.setAttribute("page_id", "113900381533912");
-        chatbox.setAttribute("attribution", "biz_inbox");
-        </script>
-
-        <!-- Your SDK code -->
-        <script>
-        window.fbAsyncInit = function() {
-            FB.init({
-            xfbml            : true,
-            version          : 'v15.0'
-            });
-        };
-
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-        </script>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../node_modules/typed.js/lib/typed.min.js" defer></script>
+    <script src="../node_modules/aos/dist/aos.js" defer></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js" defer></script>
+
     <script src="js/app.js" defer></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/typewriter-effect.js" defer></script>
 </body>
