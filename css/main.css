@@ -46,7 +46,7 @@ html {
 
 .link-grow {
     transform: scale(2.5);
-    background: #191919;
+    background: #FFC414;
     color: #f5f5f5;
 }
 
@@ -298,6 +298,7 @@ a#scroll-btn:after {
     align-items: center;
     justify-content: space-around;
     width: 100%;
+    
 }
 
 .hero-img {
@@ -336,6 +337,10 @@ a#scroll-btn:after {
     background-color: #FFC414;
     color: #121212;
     font-weight: 600;
+}
+
+.btn-arrow a:hover {
+    background-color: #e9ae00;
 }
 
 .btn-arrow img {
@@ -470,6 +475,9 @@ a#scroll-btn:after {
     width: 100vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(233, 233, 233);
     
 }
 
@@ -483,7 +491,7 @@ a#scroll-btn:after {
 
 .events-list  {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr;
     grid-gap: 1rem;
     margin: 0 2rem;
     justify-items: stretch;
@@ -497,28 +505,52 @@ a#scroll-btn:after {
     height: 500px;;
 } */
 
-.events-list .item-1 {
-    background: rgb(16, 248, 16);
+.events-list .wrapper {
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
-.events-list .item-2 {
-    background: rgb(255, 18, 18);
-    padding: 1rem;
+.events-list h1 {
+    color: #121212;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
-.events-list .item-3 {
-    background: rgb(33, 21, 255);
-    padding: 1rem;
+.red-cross-event {
+    margin: 2rem 0 0.5rem 0;
+}
+
+.img-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    grid-gap: 0.6rem;
+}
+
+.img-grid img {
+    width: 100%;
+    padding: 0.2rem;
+    cursor: pointer;
+}
+
+.expanded { 
+    transform: scale(5); 
+    z-index: 5;  
 }
 
 .promotion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
     margin-bottom: 2rem;
-    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
 }
 
 .promotion-header h3 {
@@ -526,15 +558,15 @@ a#scroll-btn:after {
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 1rem;
 }
 
-/* .promotion iframe {
-    width: 1000px;
-    max-width: 1200px;
-    height: 542;
-    max-height: 600px;
-} */
+.promotion-video {
+    background: #000;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .faculty {
     width: 100%;
@@ -1485,6 +1517,20 @@ table td {
         padding: 0 5rem;
     }
 
+    .img-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .events-list h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .events-list h1:first-child {
+        margin-top: -1.5rem;
+    }
+
     .course .list {
         grid-template-columns: auto;
     }
@@ -1592,8 +1638,8 @@ table td {
 
     .promotion iframe {
         width: 400px;
-        max-width: 500px;
-        height: -300;
+        max-width: 700px;
+        height: 300;
         max-height: 400px;
     }
 /* 
@@ -1752,12 +1798,23 @@ table td {
         padding: 0 5rem;
     }
 
+    .img-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     .course-img img {
         height: 400;
     }
 
     .campus-list {
         grid-template-columns: auto auto;
+    }
+
+    .promotion iframe {
+        width: 700px;
+        max-width: 700px;
+        height: 300;
+        max-height: 400px;
     }
 
     .faculty-list {
@@ -1832,11 +1889,22 @@ table td {
         padding: 0 5rem;
     }
 
+    .img-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
     .campus-list {
         grid-template-columns: auto auto;
     }
 
     .faculty-list {
         grid-template-columns: auto auto;
+    }
+
+    .promotion iframe {
+        width: 900px;
+        max-width: 700px;
+        height: 300;
+        max-height: 400px;
     }
 }
