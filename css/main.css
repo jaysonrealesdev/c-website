@@ -898,8 +898,13 @@ footer ul {
 }
 
 .faculty-hero {
+    width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.faculty-hero img {
+    object-fit:fill;
 }
 
 .cf:before, .cf:after{
@@ -1037,6 +1042,7 @@ footer ul {
 .scholarship {
     display: flex;
     justify-content: center;
+    align-content: center;
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -1643,6 +1649,17 @@ footer i{
     .wrapper {
         display: grid;
         grid-template-columns: auto;
+    }
+
+    .scholarship-wrapper,
+    .req-wrapper,
+    .courses-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
     }
 
     .scholarship {
