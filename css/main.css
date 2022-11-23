@@ -253,6 +253,7 @@ a#scroll-btn {
     border-radius: 3em;
     margin: auto;
     bottom: 3em;
+    transition: 300ms;
 }
 
 a#scroll-btn:before {
@@ -472,7 +473,7 @@ a#scroll-btn:after {
 
 
 .events {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -499,12 +500,6 @@ a#scroll-btn:after {
     align-content: center;
 }
 
-/* .events-list div {
-    align-self: center;
-    width: 100vw;
-    height: 500px;;
-} */
-
 .events-list .wrapper {
     padding: 1rem;
     display: flex;
@@ -519,6 +514,7 @@ a#scroll-btn:after {
     color: #121212;
     font-weight: 600;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .red-cross-event {
@@ -528,7 +524,10 @@ a#scroll-btn:after {
 .img-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    justify-content: space-evenly;
     justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
     grid-gap: 0.6rem;
 }
 
@@ -680,6 +679,10 @@ a#scroll-btn:after {
 
 .view-all .all:hover {
     color: #1d4ed8;
+}
+
+.expand-btn {
+    display: none;
 }
 
 .course {
@@ -1347,8 +1350,23 @@ table td {
     background: #c6c6c6;
 }
 
+footer i{
+    color: #1d4ed8;
+}
+
+/* .back-to-top {
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+}
+
+.back-to-top i {
+    font-size: 45px;;
+} */
+
 /* || MEDIA QUERY */
 @media screen and (max-width: 768px) {
+
     header{
         padding: 0 30px;
     }
@@ -1533,6 +1551,58 @@ table td {
 
     .course .list {
         grid-template-columns: auto;
+    }
+
+    .cutoff-text {
+        --max-lines: 3;
+        --line-height: 1.4;
+
+        max-height: calc(var(--max-lines) * 1em * var(--line-height));
+        line-height: var(--line-height);
+
+        overflow: hidden;
+        position: relative;
+    }
+
+
+    .cutoff-text:has(+ .expand-btn:not(:checked))::before {
+        content: '';
+        position: absolute;
+        height: calc(1em * var(--line-height));
+        width: 100%;
+        bottom: 0;
+        pointer-events: none;
+        background: linear-gradient(to bottom, transparent, white);
+    }
+
+    .expand-btn {
+        display: block;
+        appearance: none;
+        border: 1px solid #1d4ed8;
+        background: #1d4ed8;
+        padding: .6em 1em;
+        border-radius: .25em;
+        cursor: pointer;
+        margin-top: 1rem;
+        color: #f5f5f5;
+        transition: 300ms;
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    }
+
+    .expand-btn:hover {
+        background: #003bdd;
+    }
+
+    .expand-btn::before {
+        content: 'Expand';
+    }
+
+    .expand-btn:checked::before {
+        content: 'Collapse';
+    }
+
+    .cutoff-text:has(+ .expand-btn:checked) {
+        max-height: none;
     }
 
     .course-img img {
@@ -1798,12 +1868,70 @@ table td {
         padding: 0 5rem;
     }
 
+    .events .wrapper {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
     .img-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 
     .course-img img {
         height: 400;
+    }
+
+    .cutoff-text {
+        --max-lines: 5;
+        --line-height: 1.4;
+
+        max-height: calc(var(--max-lines) * 1em * var(--line-height));
+        line-height: var(--line-height);
+
+        overflow: hidden;
+        position: relative;
+    }
+
+
+    .cutoff-text:has(+ .expand-btn:not(:checked))::before {
+        content: '';
+        position: absolute;
+        height: calc(1em * var(--line-height));
+        width: 100%;
+        bottom: 0;
+        pointer-events: none;
+        background: linear-gradient(to bottom, transparent, white);
+    }
+
+    .expand-btn {
+        display: block;
+        appearance: none;
+        border: 1px solid #1d4ed8;
+        background: #1d4ed8;
+        padding: .6em 1em;
+        border-radius: .25em;
+        cursor: pointer;
+        margin-top: 1rem;
+        color: #f5f5f5;
+        transition: 300ms;
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    }
+
+    .expand-btn:hover {
+        background: #003bdd;
+    }
+
+    .expand-btn::before {
+        content: 'Expand';
+    }
+
+    .expand-btn:checked::before {
+        content: 'Collapse';
+    }
+
+    .cutoff-text:has(+ .expand-btn:checked) {
+        max-height: none;
     }
 
     .campus-list {
@@ -1907,4 +2035,14 @@ table td {
         height: 300;
         max-height: 400px;
     }
+}
+
+#preloader {
+    background: #fff url(../images/rocket.gif) no-repeat center center;
+    /* background: #fff url(../images/loader.gif) no-repeat center center; */
+    background-size: 20%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
 }

@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 <body>
+    <div id="preloader"></div>
     <div id="cursor" class="cursor"></div>
     <header class="header">
         <!-- Hello -->
@@ -62,7 +63,7 @@
                 <!-- <iframe width="500" height="542" src="https://www.youtube.com/embed/IjQM6NRsAGA" title="CAT COLLEGE School Promotion | SHS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
             </div>
 
-            <a id="scroll-btn"></a>
+            <a id="scroll-btn" onclick="topFunction()"></a>
         </div>
         
         <div id="why" class="why-us" data-aos="zoom-in">
@@ -119,6 +120,7 @@
             
         </div>
         <hr style="width: 80vw; margin: 0 auto;">
+        
         <div class="events">
             <div class="events-header">
                 <h3>Events</h3>
@@ -152,7 +154,7 @@
                             <img src="images/34th Foundation Day/24.jpg" alt="">
                         </div>
                         
-                        <h1 class="red-cross-event">Occupational First Aid & BLS-CPR with AED</h1>
+                       <!--  <h1 class="red-cross-event">Occupational First Aid & BLS-CPR with AED</h1>
                         
                         <div class="img-grid">
                             <img src="images/Red Cross/1.jpg" alt="">
@@ -163,7 +165,7 @@
                             <img src="images/Red Cross/6.jpg" alt="">
                             <img src="images/Red Cross/7.jpg" alt="">
                             <img src="images/Red Cross/15.jpg" alt="">
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -180,19 +182,28 @@
                     <img src="images/ba.jpg" alt="BA" width="300" height="200">
                 </div>
                 <div class="course-description">
-                    The Bachelor of Science in Business Administration (BSBA) is a four-year program which provides professional business and management education for those who would like to become entrepreneurs or pursue a career in any field of business such as economics, finance, human capital management, and marketing.
+                    <p class="cutoff-text">
+                        The Bachelor of Science in Business Administration (BSBA) is a four-year program which provides professional business and management education for those who would like to become entrepreneurs or pursue a career in any field of business such as economics, finance, human capital management, and marketing.
+                    </p>
+                    <input type="checkbox" class="expand-btn">
                 </div>
                 <div class="course-img">
                     <img src="images/compeng.jpg" alt="BA" width="300" height="200">
                 </div>
                 <div class="course-description">
-                    Computer engineering is defined as the discipline that embodies the science and technology of design, construction, implementation, and maintenance of software and hardware components of modern computing systems and computer-controlled equipment.
+                    <p class="cutoff-text">
+                        Computer engineering is defined as the discipline that embodies the science and technology of design, construction, implementation, and maintenance of software and hardware components of modern computing systems and computer-controlled equipment.
+                    </p>
+                    <input type="checkbox" class="expand-btn">
                 </div>
                 <div class="course-img">
                     <img src="images/it.jpg" alt="BA" width="300" height="200">
                 </div>
                 <div class="course-description">
-                    The Bachelor of Science in Information Technology (BSIT) program prepares students to be IT professionals who are able to perform installation, operation, development, maintenance and administration of computer applications.
+                    <p class="cutoff-text">
+                        Computer engineering is defined as the discipline that embodies the science and technology of design, construction, implementation, and maintenance of software and hardware components of modern computing systems and computer-controlled equipment.
+                    </p>
+                    <input type="checkbox" class="expand-btn">
                 </div>
             </div>
 
@@ -346,14 +357,19 @@
                 <div class="footer-contact">
                     <h2>Contacts</h2>
                     <ul>
-                        <li><span>Email: </span><a href = "mailto: catcollege_registrar@yahoo.com">catcollege_registrar@yahoo.com</a></li>
-                        <li><span>Phone number: </span><a href="tel:920-870-5327">0920-870-5327</a></li>
-                        <li><span>Telephone: </span><a href="tel:742-2500">742-2500</a></li>
-                        <li><span>Address: </span><address>Balintawak St,. Albay District, Legaspi City</address></li>
+                        <li><span><i class="uil uil-envelope"></i> </span><a href = "mailto: catcollege_registrar@yahoo.com">catcollege_registrar@yahoo.com</a></li>
+                        <li><span><i class="uil uil-phone-alt"></i> </span><a href="tel:920-870-5327">0920-870-5327</a></li>
+                        <li><span><i class="uil uil-phone-alt"></i> </span><a href="tel:742-2500">742-2500</a></li>
+                        <li><span><i class="uil uil-location-point"></i> </span><address>Balintawak St,. Albay District, Legaspi City</address></li>
                     </ul>
                 </div>
             </div>
+
+<!--             <div class="back-to-top">
+                <i class="uil uil-arrow-circle-up"></i>
+            </div> -->
         </footer>
+
         
         <div class="dev">
             <p>	Copyright &copy; JNR - <script>document.write(new Date().getFullYear())</script></p>
@@ -367,4 +383,6 @@
     <script src="js/app.js" defer></script>
     <script src="js/typewriter-effect.js" defer></script>
     <script src="js/fullscreen-img.js" defer></script>
+    <script src="js/scroll.js" defer></script>
+    <script src="js/loader.js" defer></script>
 </body>
