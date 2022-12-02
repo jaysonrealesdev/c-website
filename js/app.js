@@ -85,6 +85,14 @@ const enroll = () => {
   window.open('http://enroll.catcollege.edu.ph/enrollment/', '_blank');
 }
 
+const elms = () => {
+  window.open('http://elms.catcollege.edu.ph/', '_blank');
+}
+
+const library = () => {
+  window.open('http://library.catcollege.edu.ph/', '_blank');
+}
+
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
