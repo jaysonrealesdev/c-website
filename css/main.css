@@ -184,7 +184,7 @@ button.login:hover {
     font-size: 15px;
   }
 
-  .header-btn a {
+  .header-btn p {
     color: #282936;
   }
   
@@ -763,14 +763,6 @@ button.learn-more .circle {
     cursor: pointer;
   }
 
- /*  .img-box:nth-child(even) {
-    transition-delay: 200ms;
-  }
-
-  .img-box:nth-child(odd) {
-    transition-delay: 400ms;
-  } */
-
 .events-list h1 {
     color: #282936;
     font-weight: 600;
@@ -798,6 +790,7 @@ button.learn-more .circle {
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
+    margin: 1rem;
 }
 
 .promotion-video {
@@ -1144,10 +1137,12 @@ footer ul {
     width: 100%;
     display: flex;
     justify-content: center;
+    background: url(../images/Moon\ \(1\).svg) no-repeat center center;
 }
 
 .faculty-hero img {
-    object-fit:fill;
+    object-fit: contain;
+    margin: 2rem 0 -.5rem 0;
 }
 
 .search-bar {
@@ -1346,7 +1341,7 @@ footer ul {
    /* border: 1px solid rgba(102, 102, 102, 0.427); */
    /* height: 100vh; */
    width: 50%;
-   margin: 0 auto;
+   margin: 1rem auto;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -1768,6 +1763,10 @@ footer i{
         margin-bottom: 15px;
     }
 
+    .dropdown-content {
+        margin: -1rem;
+    }
+
     .hero img {
         width: 300px;
         height: auto;
@@ -1897,7 +1896,7 @@ footer i{
     }
 
     .expand-btn::before {
-        content: 'Expand';
+        content: 'Read More';
     }
 
     .expand-btn:checked::before {
@@ -1916,6 +1915,7 @@ footer i{
     .course-description {
         padding: 1rem;
         text-align: justify;
+        width: 350px;
     }
 
     .view-all {
@@ -2204,7 +2204,7 @@ footer i{
     }
 
     .cutoff-text {
-        --max-lines: 5;
+        --max-lines: 4;
         --line-height: 1.4;
 
         max-height: calc(var(--max-lines) * 1em * var(--line-height));
@@ -2244,7 +2244,7 @@ footer i{
     }
 
     .expand-btn::before {
-        content: 'Expand';
+        content: 'Read More';
     }
 
     .expand-btn:checked::before {

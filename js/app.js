@@ -82,7 +82,7 @@ const closeBtn = () => { // Animate Close Button
 }
 
 const enroll = () => {
-  window.location.href = "http://enroll.catcollege.edu.ph/enrollment/";
+  window.open('http://enroll.catcollege.edu.ph/enrollment/', '_blank');
 }
 
 function myFunction() {
