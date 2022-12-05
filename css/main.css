@@ -189,7 +189,8 @@ button.login:hover {
   }
   
   .header-btn:hover {
-    background: #f5b802;
+    /* background: #f5b802; */
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
   }
   
   .header-btn > svg {
@@ -691,7 +692,7 @@ button.learn-more .circle {
   }
   
   .visit .header-btn:hover {
-    background: #043ddc;
+    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
   }
   
   .visit .header-btn > svg {
