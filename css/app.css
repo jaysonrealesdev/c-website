@@ -118,40 +118,25 @@
      align-items: center;
      justify-content: space-between;
 }
- .nav-bar ul li a {
+
+.nav-bar ul li .nav-link {
      display: block;
      color: #f5f5f5;
      font-weight: 550;
      letter-spacing: 2px;
-     font-size: 1rem;
+     font-size: .9rem;
      padding: 10px 20px;
      transition: all 0.3s;
      border-radius: 2px;
      margin: 0 5px;
      transition: 0.3s;
 }
- .nav-bar ul li a:hover, .nav-bar ul li a:focus{
+
+.nav-bar ul li .nav-link:hover, .nav-bar ul li .nav-link:focus{
      color: #ffc414;
 }
-/* button.login {
-     background-color: #ffc414;
-     border: none;
-     outline: none;
-     padding: 12px 25px;
-     color: #282936;
-     font-weight: 600;
-     font-size: 1rem;
-     cursor: pointer;
-     margin-left: 5rem;
-     font-family: 'Poppins', sans-serif;
-}
- button.login:hover {
-     background-color: #e9ae00;
-     color: #282936;
-     transition: 0.3s ease-in-out;
-}
- */
- .header-btn {
+
+.header-btn {
      cursor: pointer;
      font-weight: 700;
      transition: all .2s;
@@ -185,45 +170,97 @@
  .hamburger {
      display: none;
 }
- .dropbtn {
+
+ul.facilities-dropdown-content {
+     min-width: 160px;
+     background: #f5f5f5;
+     display: none;
+     flex-direction: column;
+     position: absolute;
+     top: 70px;box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.57);
+     -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.57);
+     -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.57);
+}
+
+.facilities-dropdown-content li{
+     display: block;
+     width: 100%;
+     cursor: pointer;
+ }
+
+.facilities-dropdown-content li a {
+     color: #282936;
+     display: block;
+     padding: 15px 25px;
+     text-decoration: none;
+     transition: all 0.3s;
+     font-size: 0.9rem;
+}
+
+.facilities-dropdown-content li a:hover{
+     background: #282936;
+     color: #f5f5f5;
+}
+
+.facilities-dropdown-content li a:hover::after{
+     content: ' \01F892';
+     font-size: 1rem;
+     position: absolute;
+     right: 10px;
+ }
+
+ /* HOW TO DROPDOWN MENU */
+ ul.dropdown-content {
+     min-width: 160px;
+     background: #f5f5f5;
+     display: none;
+     flex-direction: column;
+     position: absolute;
+     top: 70px;
+     box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.57);
+     -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.57);
+     -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.57);
+}
+
+.dropdown-content li{
+     display: block;
+     width: 100%;
+     cursor: pointer;
+ }
+
+.dropdown-content li a {
+     color: #282936;
+     display: block;
+     padding: 15px 25px;
+     text-decoration: none;
+     transition: all 0.3s;
+}
+
+.dropdown-content li a:hover{
+     background: #282936;
+     color: #f5f5f5;
+}
+
+.dropdown-content li a:hover span{
+     transform: translateX(10px);
+} 
+
+.dropdown-content li a:hover::after{
+     content: ' \01F892';
+     font-size: 1rem;
+     position: absolute;
+     right: 10px;
+ }
+/* HOW TO END */
+
+.dropbtn,
+.facilities-btn {
      background-color: transparent;
      border: none;
      cursor: pointer;
 }
-/* .dropbtn:hover, .dropbtn:focus {
-     color: #e9ae00;
-}
- */
- .dropdown {
-     position: relative;
-     display: inline-block;
-}
- .dropdown-content {
-     display: none;
-     position: absolute;
-     background-color: #040404;
-     min-width: 160px;
-     overflow: auto;
-     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-     z-index: 1;
-     margin-top: 1.3rem;
-     transition: 0.5s;
-}
- .dropdown-content a {
-     color: #282936;
-     padding: 12px 16px;
-     text-decoration: none;
-     display: block;
-}
-/* .dropdown-content a:hover {
-     background-color: #f5f5f5;
-}
- */
- .show {
-    display: block;
-}
+
 /* || SCROLLBAR CSS */
-/* width */
  ::-webkit-scrollbar {
      width: 12px;
 }
@@ -690,13 +727,14 @@
  .img-box {
      box-sizing: content-box;
      margin: 10px;
-     height: 250px;
-     width: 350px;
+     height: 200px;
+     width: 250px;
      overflow: hidden;
      display: inline-block;
      color: white;
      position: relative;
      background-color: white;
+     object-fit: cover;
 }
  .img-box:hover img {
      transform: scale(1.5);
@@ -1336,10 +1374,10 @@
      grid-column-end: auto;
 }
  @media screen and (min-width: 768px) {
-     .item--full {
-         grid-column: 1/-1;
-         grid-row-end: span 2;
-    }
+.item--full {
+     grid-column: 1/-1;
+     grid-row-end: span 2;
+}
 }
  .item__details {
      position: relative;

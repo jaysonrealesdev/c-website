@@ -7,17 +7,17 @@
     <title>CAT College, Inc.</title>
 
     <link rel="shortcut icon" href="http://elms.catcollege.edu.ph/theme/image.php/klass/theme/1595474579/favicon" />
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 <body>
     <div id="preloader"></div>
     <header class="header">
-        <!-- Hello -->
         <div class="logo">
-            <a href="/"><img src="images/catc-logo.jpg" alt="CATC Logo" width="60" height="60" class="brand-img"></a>
+            <a href="index.html"><img src="../images/catc-logo.jpg" alt="CATC Logo" width="60" height="60" class="brand-img"></a>
         </div>
         
         <div class="hamburger">
@@ -26,20 +26,30 @@
         
         <nav class="nav-bar" id="nav-bar">
             <ul class="nav">
-                <li><a href="/" class="active ">Home</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="index.html#campus">Campus</a></li>
-                <li><a href="index.html#why">Why Us?</a></li>
-                <li>
-                    <a onclick="myFunction()" class="dropbtn">How To?</a>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="how-to.html">How To Enroll?</a>
-                        <hr>
-                        <a href="scholarship.html">Scholarships</a>
-                        <a href="requirements.html">Requirements</a>
-                    </div>
+                <li><a class="nav-link" href="/" class="active ">Home</a></li>
+                <li><a class="nav-link" href="courses.html">Courses</a></li>
+                <li><a class="nav-link" href="index.html#campus">Campus</a></li>
+                <li class="facilitiesDrop">
+                    <a class="facilities-btn nav-link" id="facilities-btn">Facilities<i class="uil uil-angle-down"></i></a>
+                    <ul id="facilitiesDropdown" class="facilities-dropdown-content hideDiv">
+                        <li> <a class="dropdown-link" href="#"><span>Extension Computer Lab</span></a></li>
+                        <li> <a class="dropdown-link" href="#">Electronics Laboratory</a></li>
+                        <li> <a class="dropdown-link" href="#">Main Campus Library</a></li>
+                        <li> <a class="dropdown-link" href="#">Extension Library</a></li>
+                        <li> <a class="dropdown-link" href="#">Electronics Tools</a></li>
+                        <li> <a class="dropdown-link" href="#">Polangui Facility</a></li>
+                        <li> <a class="dropdown-link" href="#">Ligao Facility</a></li>
+                    </ul>
                 </li>
-                <!-- <button class="login" onclick="enroll()">Enroll Now</button> -->
+                <li><a class="nav-link" href="#why">Why Us?</a></li>
+                <li class="dropbtn">
+                    <a class="dropbtn nav-link" id="howTo">How To?<i class="uil uil-angle-down" id="iconBtn"></i></a>
+                    <ul id="myDropdown" class="dropdown-content">
+                        <li><a class="drodown-link" href="how-to.html">How To Enroll?</a></li> 
+                        <li><a class="drodown-link" href="scholarship.html">Scholarships</a></li> 
+                        <li><a class="drodown-link" href="requirements.html">Requirements</a></li> 
+                    </ul>
+                </li>
                 <button class="header-btn" onclick="enroll()">
                     <p>Enroll Now</p>
                     <svg width="34" height="34" viewBox="0 0 74 74" fill="#2a2f3b" xmlns="http://www.w3.org/2000/svg">
@@ -258,11 +268,13 @@
             
         </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/app.js" defer></script>
-    <script src="js/searchCourse.js" defer></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/loader.js" defer></script>
+    <script src="./node_modules/typed.js/lib/typed.min.js" defer></script>
+    <script src="./node_modules/aos/dist/aos.js" defer></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js" defer></script>
+    <script src="./js/app.js" defer></script>
+    <script src="./js/typewriter-effect.js" defer></script>
+    <script src="./js/fullscreen-img.js" defer></script>
+    <script src="./js/scroll.js" defer></script>
+    <script src="./js/loader.js" defer></script>
 </body>
 </html>
