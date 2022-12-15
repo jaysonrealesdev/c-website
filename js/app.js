@@ -127,18 +127,31 @@ facBtn.onclick = function(event) { // Close the dropdown if the user clicks outs
   }
 } */
 
-$(document).ready(function(){
+  $(document).ready(function(){
   // Show hide popover
-  $(".facilitiesDrop").click(function(){
-      $(this).find(".facilities-dropdown-content").slideToggle("fast");
+    $(".aboutDrop").click(function(){
+        $(this).find(".about-dropdown-content").slideToggle("fast");
+    });
   });
-});
-$(document).on("click", function(event){
-  const $trigger = $(".facilitiesDrop");
-  if($trigger !== event.target && !$trigger.has(event.target).length){
-      $(".facilities-dropdown-content").slideUp("fast");
-  }            
-});
+  $(document).on("click", function(event){
+    const $trigger = $(".aboutDrop");
+    if($trigger !== event.target && !$trigger.has(event.target).length){
+        $(".about-dropdown-content").slideUp("fast");
+    }            
+  });
+
+  $(document).ready(function(){
+  // Show hide popover
+    $(".facilitiesDrop").click(function(){
+        $(this).find(".facilities-dropdown-content").slideToggle("fast");
+    });
+  });
+  $(document).on("click", function(event){
+    const $trigger = $(".facilitiesDrop");
+    if($trigger !== event.target && !$trigger.has(event.target).length){
+        $(".facilities-dropdown-content").slideUp("fast");
+    }            
+  });
 
 $(document).ready(function(){
   // Show hide popover

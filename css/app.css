@@ -68,8 +68,8 @@
      animation-iteration-count: 1;
      animation-fill-mode: forwards;
      overflow-x: hidden;
-     width: 100vw;
-     height: 100vh;
+     min-width: 100vw;
+     min-height: 100vh;
     /* background-color: #f5f5f5;
      */
 }
@@ -152,9 +152,7 @@
      color: #282936;
 }
  .header-btn:hover {
-    /* background: #f5b802;
-     */
-     background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    background: #f5b802;
 }
  .header-btn > svg {
      width: 34px;
@@ -169,6 +167,10 @@
 }
  .hamburger {
      display: none;
+}
+
+.facilitiesDrop {
+     cursor: pointer;
 }
 
 ul.facilities-dropdown-content {
@@ -253,12 +255,52 @@ ul.facilities-dropdown-content {
  }
 /* HOW TO END */
 
+/* ABOUT US */
+ul.about-dropdown-content {
+     min-width: 160px;
+     background: #f5f5f5;
+     display: none;
+     flex-direction: column;
+     position: absolute;
+     top: 70px;box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.57);
+     -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.57);
+     -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.57);
+}
+
+.about-dropdown-content li{
+     display: block;
+     width: 100%;
+     cursor: pointer;
+ }
+
+.about-dropdown-content li a {
+     color: #282936;
+     display: block;
+     padding: 15px 25px;
+     text-decoration: none;
+     transition: all 0.3s;
+     font-size: 0.9rem;
+}
+
+.about-dropdown-content li a:hover{
+     background: #282936;
+     color: #f5f5f5;
+}
+
+.about-dropdown-content li a:hover::after{
+     content: ' \01F892';
+     font-size: 1rem;
+     position: absolute;
+     right: 10px;
+ }
+
 .dropbtn,
-.facilities-btn {
+.about-btn {
      background-color: transparent;
      border: none;
      cursor: pointer;
 }
+/* ABOUT US END */
 
 /* || SCROLLBAR CSS */
  ::-webkit-scrollbar {
@@ -650,7 +692,7 @@ ul.facilities-dropdown-content {
      letter-spacing: 1px;
 }
  .visit .header-btn:hover {
-     background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+     background:#0940d8;
 }
  .visit .header-btn > svg {
      width: 34px;
@@ -1005,6 +1047,7 @@ ul.facilities-dropdown-content {
      margin: 0px;
      font-size: 1.6rem;
 }
+
 /* .campus .card .info p {
      letter-spacing: 1px;
      font-size: 15px;
@@ -1329,7 +1372,7 @@ ul.facilities-dropdown-content {
      grid-column-start: auto;
      grid-row-start: auto;
      color: #fff;
-     background: url("https://images.pexels.com/photos/3862631/pexels-photo-3862631.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+     background: url("../images/Facilities/Electronics Lab/E2.jpg");
      background-size: cover;
      background-position: center;
      box-shadow: -2px 2px 10px 0px rgba(68, 68, 68, 0.4);
@@ -1337,17 +1380,23 @@ ul.facilities-dropdown-content {
      cursor: pointer;
      counter-increment: item-counter;
 }
- .item:nth-of-type(3n) {
-     background-image: url("https://images.pexels.com/photos/3825582/pexels-photo-3825582.jpeg?cs=srgb&dl=pexels-rfstudio-3825582.jpg&fm=jpg");
+
+.item:nth-of-type(2n) {
+     background-image: url("../images/Facilities/Legaspi Library/2.jpg");
 }
+
+.item:nth-of-type(3n) {
+     background-image: url("../images/Facilities/computer lab Extension/ROOM\ 202E.jpg");
+}
+
+/*  .item:nth-of-type(3n) {
+     background-image: url("../images/Facilities/computer lab Extension/ROOM\ 202E.jpg");
+} */
  .item:nth-of-type(4n) {
-     background-image: url("https://images.pexels.com/photos/8442535/pexels-photo-8442535.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+     background-image: url("../images/Facilities/Library CATC main/L1.jpg");
 }
  .item:nth-of-type(5n) {
-     background-image: url("https://images.pexels.com/photos/8442535/pexels-photo-8442535.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-}
- .item:nth-of-type(6n) {
-     background-image: url("https://images.pexels.com/photos/3862623/pexels-photo-3862623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+     background-image: url("../images/Facilities/Electronics tools/272116216_4846629352120354_4997447144083351910_n.jpg");
 }
  .item:after {
      content: "";

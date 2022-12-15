@@ -1,14 +1,27 @@
+
+img{
+    pointer-events: none;
+}
+
+address {
+    display: inline;
+}
+
 main {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
     display: flex;
     flex-direction: row-reverse;
 }
 
 .content {
     width: 100%;
-    height: 100%;
     background: #f5f5f5;
     padding: 1rem 3rem;
     /* display: flex;
@@ -19,25 +32,27 @@ main {
 
 .sidebar {
     background: #d8d8d8;
-    height: 100%;
     width: 700px;
+    height: 100vh;
     position: relative;
 
     display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-flow: column wrap;
 }
 
 .sidebar ul {
     list-style: none;
+    margin: 1rem 0 0 -2rem;
 }
 
 .sidebar ul li{
-    margin: 1rem;
     width: 100%;
-    padding: 1rem;
     transition: all 300ms;
+    color: #282936;
 }
 
 .sidebar ul li.active {
@@ -48,10 +63,14 @@ main {
     color: #282936;
     font-size: 1.5rem;
     font-style: italic;
+    padding: 15px 25px;
+    width: 100%;
+    display: block;
 }
 
-.sidebar ul li:hover {
-    background: #f5f5f5;
+.sidebar ul li a:hover {
+    background: #282936;
+    color: #f5f5f5;
 }
 
 .content .title {
@@ -77,25 +96,25 @@ main {
     left: 450px;
 }
 
-.content-list {
+.content .content-list {
     top: .5rem;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
-.content-list img {
+.content .content-list img {
     height: 250px;
     width: 350px;
     transform: scale(1.0);
     transition: transform 0.4s ease;
 }
 
-.content-list .content__list-img-box {
+.content .content-list .content__list-img-box {
     box-sizing: content-box;
-    margin: 10px 30px;
+    margin: 10px;
     height: 200px;
     width: 250px;
     overflow: hidden;
@@ -106,12 +125,170 @@ main {
     object-fit: cover;
 }
 
-.content-list .content__list-img-box:hover img {
+.content .content-list .content__list-img-box:hover img {
     transform: scale(1.2);
 }
 
-.content-list .content__list-img-box:hover {
+.content .content-list .content__list-img-box:hover {
     cursor: pointer;
+}
+
+.about-container {
+    padding: 2rem 5rem;
+    min-height: 100vh;
+    flex-direction: c;
+}
+
+.about-container .img {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto 2rem auto;
+}
+
+.about-container img {
+    width: 100%;
+    height: 200px;
+}
+
+/* .about-container::before {
+    content: '';
+    background: url(http://elms.catcollege.edu.ph/pluginfile.php/1/theme_klass/footerlogo/1595474579/logo%20small.png) no-repeat;
+    background-position: center center;
+    background-size: 80%;
+    position: absolute;
+    left: 0;
+    top: 125px;
+    right: 0;
+    bottom: 0;
+    z-index: -1000;
+    opacity: 0.3;
+} */
+
+.about-title {
+    font-size: 2rem;
+}
+
+.about {
+    border-top: .1em solid #2c2d38;
+    padding: 1rem;
+}
+
+.about p {
+    margin-top: 1rem;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.about a {
+    color: #1d4ed8;
+}
+
+.mv-container {
+    padding: 2rem 5rem;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2rem
+}
+
+.mv-title {
+    font-size: 2rem;
+}
+
+.mission,
+.vision {
+    border-top: .1em solid #2c2d38;
+    padding: 1rem;
+}
+
+.vision p,
+.mission p {
+    margin-top: 1rem;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.mv-container .mv-item {
+    /* background: rgb(236, 236, 236); */
+    padding: 0rem 3rem;
+    filter: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.1)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+}
+
+.objective-container {
+    padding: 2rem 5rem;
+    min-height: 100vh;
+}
+
+.objectives-title {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.objective p {
+    margin-top: 1rem;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.go-container {
+    padding: 2rem 5rem;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2rem;
+}
+
+.go-container::before {
+    content: '';
+    background: url('../images/business-way-to-success.svg') no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1000;
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+}
+
+.go-title {
+    font-size: 2rem;
+}
+
+.goals,
+.objectives {
+    border-top: .1em solid #2c2d38;
+    padding: 1rem;
+}
+
+.goals ul {
+    list-style-type: decimal; 
+    margin: 1.5rem 0 0 2rem;
+}
+
+.objectives ul {
+    list-style-type: none; 
+    margin: 1.5rem 0 0 2rem;
+}
+
+.objectives ul > li:before {
+    content: "- ";
+    text-indent: -5px;
+  }
+
+.goals p,
+.objectives p {
+    margin-top: 1rem;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.go-container .go-item {
+    /* background: rgb(236, 236, 236); */
+    padding: 0rem 3rem;
+    filter: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.1)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
 }
 
 /* .container {

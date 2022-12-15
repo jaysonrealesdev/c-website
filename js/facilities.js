@@ -1,8 +1,18 @@
-const currentLocation = window.location.pathname;
-const listItems = document.querySelectorAll(".list-links li");
+let selectedItem;
 
-/* console.log(listItems); */
+function selectItem(e) {
+  if (this === selectedItem) return;
+  selectedItem.classList.remove('selected');
+  this.classList.add('selected');
+  selectedItem = this;
+}
 
-listItems.forEach(listItems => {
-    console.log(listItems.href);
-});
+function init() {
+  selectedItem = document.querySelector('a.selected');
+  const items = document.querySelectorAll('a');
+  items.forEach((item) => {
+    item.addEventListener('click', selectItem, true);
+  })
+}
+
+init();

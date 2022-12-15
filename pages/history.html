@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History - CAT College, Inc</title>
+    <link rel="shortcut icon" href="http://elms.catcollege.edu.ph/theme/image.php/klass/theme/1595474579/favicon" />
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/facilities-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <div id="preloader"></div>
+    <header class="header">
+        <div class="logo">
+            <a href="../index.html"><img src="../images/catc-logo.jpg" alt="CATC Logo" width="60" height="60" class="brand-img"></a>
+        </div>
+        
+        <div class="hamburger">
+            <div class="line"></div>
+        </div>
+        
+        <nav class="nav-bar" id="nav-bar">
+            <ul class="nav">
+                <li><a class="nav-link" href="/" class="active ">Home</a></li>
+                <li><a class="nav-link" href="#courses">Courses</a></li>
+                <li><a class="nav-link" href="#campus">Campus</a></li>
+                <li class="facilitiesDrop">
+                    <a class="facilities-btn nav-link" id="facilities-btn">Facilities<i class="uil uil-angle-down"></i></a>
+                    <ul id="facilitiesDropdown" class="facilities-dropdown-content hideDiv">
+                        <li> <a class="dropdown-link" href="pages/com-lab.html"><span>Extension Computer Lab</span></a></li>
+                        <li> <a class="dropdown-link" href="/pages/electronics-lab.html">Electronics Laboratory</a></li>
+                        <li> <a class="dropdown-link" href="/pages/main-library.html">Main Campus Library</a></li>
+                        <li> <a class="dropdown-link" href="/pages/ext-library.html">Extension Library</a></li>
+                        <li> <a class="dropdown-link" href="/pages/electronics-tools.html">Electronics Tools</a></li>
+                        <li> <a class="dropdown-link" href="/pages/pol-facility.html">Polangui Facility</a></li>
+                        <li> <a class="dropdown-link" href="/pages/li-facility.html">Ligao Facility</a></li>
+                    </ul>
+                </li>
+                <li class="aboutDrop">
+                    <a class="about-btn nav-link" id="about-btn">About<i class="uil uil-angle-down"></i></a>
+                    <ul id="aboutDropdown" class="about-dropdown-content hideDiv">
+                        <li> <a class="dropdown-link" href="/pages/goals.html">Goals & Objectives</a></li>
+                        <li> <a class="dropdown-link" href="/pages/mission.html">Mission & Vision</a></li>
+                        <li> <a class="dropdown-link" href="../index.html#why-us"><span>Why Us?</span></a></li>
+                        <li> <a class="dropdown-link" href="/pages/history.html">History</a></li>
+                    </ul>
+                </li>
+                <li class="dropbtn">
+                    <a class="dropbtn nav-link" id="howTo">How To?<i class="uil uil-angle-down" id="iconBtn"></i></a>
+                    <ul id="myDropdown" class="dropdown-content">
+                        <li><a class="drodown-link" href="how-to.html">How To Enroll?</a></li> 
+                        <li><a class="drodown-link" href="scholarship.html">Scholarships</a></li> 
+                        <li><a class="drodown-link" href="requirements.html">Requirements</a></li> 
+                    </ul>
+                </li>
+                <!-- <button class="login" onclick="enroll()">Enroll Now</button> -->
+                <button class="header-btn" onclick="enroll()">
+                    <p>Enroll Now</p>
+                    <svg width="34" height="34" viewBox="0 0 74 74" fill="#2a2f3b" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="37" cy="37" r="35.5"></circle>
+                        <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="white"></path>
+                    </svg>
+                </button>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+    <div class="about-container">
+        <h3 class="about-title">History</h3>
+        <div class="about">
+            <div class="img">
+                <img src="../images/logo small.png" alt="CATC LOGO">
+            </div>
+            <p>
+                Aware of the development needs of the country. particularly of the Bicol Region in the areas of science and technology, <b>Mr. Reynaldo A. Belleza</b>, <i>Certified Public Accountant (CPA)</i> and a <i>Bank Manager</i>  then, had decided to step up his help where it was needed most-the training of manpower that presents the fruits of the recent research in computer and technological education. The founder of this institution had the vision of molding the youth through quality education into graduates who will be productive members of our society in various areas of endeavor. That vision has been made a reality when CAT College was founded on <time>June 10, 1987</time> and formally accredited by the Department of Education Culture and Sports (DECS) in 1989.
+            </p>
+                
+            <p>
+                The school had its humble beginnings. It started with only 4-rented rooms at the second floor of PVLB Building in downtown Legazpi, with only 120 students and a handful instructors and administrative staff. A year after, enrollment increased to 198. Additional rooms were provided at the 2nd floor of King's Commercial Center situated just across the PVLB Building. Then in 1991, the school had 282 enrollees which necessitated a bigger and permanent space. A new school site located at Balintawak Street, Albay District, Legazpi City was found available to accommodate the total enrollment of 402 students.
+            </p>
+            
+            <p>
+                Imbued with prime interest in youth development, the management of CAT College expanded its operation. In 1989, CAT College management ac- quired Southern Luzon Technical School in Kimantong, Daraga, Albay. It was heavily devastated by super typhoon Sisang. Before, this school offered only vocational courses. Upon the acquisition of the Belleza's it offered a 4-year course, Bachelor of Science in Computer Science (BSCS). It's pioneer students graduated in March 1993. The school has been renamed as Southern Luzon Technological College (SOLZTEC). Then in 1996, SOLZTEC has been merged with CAT College as its component department. 
+            </p>
+            
+            <p>
+                During the school year 1993-1994, Albay Institute of Technology (AIT), the sister school of CAT College was opened in Sta. Cruz, Ligao Albay. Its existence serves the noble purpose of providing affordable education to the youth of Ligao City and its adjoining municipalities toward national development.
+            </p>
+                
+            <p>
+                Across the years, CAT College has metamorphosed dramatically into a prestigious institution of higher education. It has been responding to the needs of the times through its relevant course offerings. The school is now housed in its own 5-storey building conveniently and strategically located at Balintawak Street, Albay District, Legazpi City, just at the back of Albay Astrodome and within the vicinity of the seats of the city and provincial governments. The modern school building is equipped with the latest computer, multi-media and Research facilities, laboratories, technical and technological machines and equipment. Backed-up by a highly qualified and dedicated faculty, administrative officers and staff, the school has grown over the years with unprecedented 100% increase in enrollment. The student body is opportune with faculty members drawn from prestigious and relevant professional organizations, business circles, government agencies and private offices. With their competence, bridging theoretical knowledge with actual aspects of the government, business and industry is enhanced and facilitated.
+            </p>
+                
+            <p>
+                As a prominent relevant and responsive higher education instination CAT College has been affiliated with <b><a href="">Philippine Association of Private Technical Institution</a> (PAPTI)</b>, <b> <a href="http://pacsa.orgfree.com/">Philippine Association of Campus Student Advisers</a> (PACSA)</b>, <b> <a href="https://www.facebook.com/Administrationlead/">Bicol Foundation for Higher Education</a> (BFHE)</b>, <b>Philippine Educators Association for Criminology Education (PEACE)</b>, <b>Private Schools Athletic A sociation (PRISAA)</b>, <b>Philippine Association of Private School Colleges and Universities (PAPSCU)</b>, <b>Bicol Association for Business Education (BABE)</b>, <b>Phillippine Association for Technological Education (PATE)</b>, <b>Philippine Association of Campus Student Advicers (PACSA)</b>, <b> <a href="https://www.facebook.com/AICTA/">Albay Information and Communication Technology Association</a> (AICTA)</b>, <b> <a href="https://psite.org/">Philippine Society of Information Technology Educators Foundation, Inc.</a> (PSITE)</b>.
+            </p>
+            </p>
+        </div>  
+    </div>
+        
+    </main>
+    <footer>
+        <div class="footer-image">
+            <img src="../images/logo-small.png" alt="Footer Image" width="150" height="50">
+        </div>
+        <div class="wrapper">
+            <div class="footer-links">
+                <h2>Helpful Links</h2>
+                <ul>
+                    <li><a target="_blank" href="https://www.facebook.com/CATCollege.official">Facebook</a></li>
+                    <li><a target="_blank" href="http://elms.catcollege.edu.ph/">ELMS</a></li>
+                    <li><a target="_blank" href="http://enroll.catcollege.edu.ph/enrollment/">Enrollment</a></li>
+                    <li><a target="_blank" href="http://library.catcollege.edu.ph/">Library</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h2>Contacts</h2>
+                <ul>
+                    <li><span><i class="uil uil-envelope"></i> </span><a href = "mailto: catcollege_registrar@yahoo.com">catcollege_registrar@yahoo.com</a></li>
+                    <li><span><i class="uil uil-phone-alt"></i> </span><a href="tel:920-870-5327">0920-870-5327</a></li>
+                    <li><span><i class="uil uil-phone-alt"></i> </span><a href="tel:742-2500">742-2500</a></li>
+                    <li><span><i class="uil uil-location-point"></i> </span><address>Balintawak St,. Albay District, Legaspi City</address></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../node_modules/aos/dist/aos.js" defer></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js" defer></script>
+    <script src="../js/app.js" defer></script>
+    <script src="../js/typewriter-effect.js" defer></script>
+    <script src="../js/fullscreen-img.js" defer></script>
+    <script src="../js/scroll.js" defer></script>
+    <script src="../js/loader.js" defer></script>
+    <script src="../js/facilities.js" defer></script>
+</body>
+</html>
