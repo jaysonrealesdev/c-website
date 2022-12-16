@@ -127,7 +127,7 @@ facBtn.onclick = function(event) { // Close the dropdown if the user clicks outs
   }
 } */
 
-  $(document).ready(function(){
+  /* $(document).ready(function(){
   // Show hide popover
     $(".aboutDrop").click(function(){
         $(this).find(".about-dropdown-content").slideToggle("fast");
@@ -164,6 +164,14 @@ $(document).on("click", function(event){
   if($trigger !== event.target && !$trigger.has(event.target).length){
       $(".dropdown-content").slideUp("fast");
   }            
+}); */
+
+$(function(){
+  $(".headerContent").load("header.html"); 
+});
+
+$(function(){
+  $(".footerContent").load("footer.html"); 
 });
 
 // showBackBtn();
