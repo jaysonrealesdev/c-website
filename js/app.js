@@ -57,28 +57,6 @@ navLink.forEach(link => {
   });
 }) */
 
-const menuBtn = () => { // Open Menu On Small Screen
-  const hamburger = document.querySelector('.hamburger');
-  hamburger.onclick = function () { 
-    const navBar = document.querySelector('.nav-bar');
-    navBar.classList.toggle('active');
-  }
-}
-
-const closeBtn = () => { // Animate Close Button
-  const menuBtn = document.querySelector('.hamburger');
-  let menuOpen = false;
-  menuBtn.addEventListener('click', function () {
-  if(!menuOpen) {
-      menuBtn.classList.add('open');
-      menuOpen = true;
-  } else {
-      menuBtn.classList.remove('open');
-      menuOpen = false;;
-  }
-});
-}
-
 const enroll = () => {
   window.open('http://enroll.catcollege.edu.ph/enrollment/', '_blank');
 }
@@ -100,8 +78,7 @@ $(function(){
 });
 
 // showBackBtn();
-closeBtn();
-menuBtn();
+
 
 
 

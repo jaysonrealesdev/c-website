@@ -1,0 +1,532 @@
+@media screen and (min-width: 768px) {
+    .item--full {
+         grid-column: 1/-1;
+         grid-row-end: span 2;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+         padding: 0 50px;
+    }
+
+    .hamburger{
+         display: block;
+         cursor: pointer;
+         transition: all 0.5s ease-in-out;
+    }
+
+    .line {
+         width: 35px;
+         height: 5px;
+         background: #f5f5f5;
+         transition: all 0.5s ease-in-out;
+    }
+
+    .line::before {
+         content: "";
+         position: absolute;
+         width: 40px;
+         height: 4px;
+         background: #f5f5f5;
+         transition: all 0.5s ease-in-out;
+    }
+
+    .line::after {
+         content: "";
+         position: absolute;
+         width: 30px;
+         height: 4px;
+         background: #f5f5f5;
+         transition: all 0.5s ease-in-out;
+    }
+    .line::before {
+         transform: translateY(-10px);
+    }
+
+    .line::after {
+         transform: translateY(10px);
+    }
+    .hamburger.open .line {
+         transform: translateX(-50px);
+         background: transparent;
+    }
+
+    .hamburger.open .line::before {
+         transform: rotate(45deg) translate(35px, -35px);
+         background: #dc2626;
+         width: 40px;
+    }
+
+    .hamburger.open .line::after {
+         transform: rotate(-45deg) translate(35px, 35px);
+         background: #dc2626;
+         width: 40px;
+    }
+
+    .nav-bar {
+        height: 0;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #1d4ed8;
+        transition: 0.3s;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .nav-bar.active {
+        /* border-top: 1px solid #f5f5f5; */
+        height: 100vh;
+        transition: 0.3s;
+        z-index: 999999;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: -moz-fit-content;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+         opacity: 1;
+    }
+
+    .nav-bar ul li .nav-link{
+     font-size: 1rem;
+    }
+    
+    .nav-bar ul li a {
+         margin-bottom: 15px;
+    }
+
+    .dropdown-content {
+         margin: -1rem;
+    }
+
+    .hero {
+         /*  min-height: calc(100vh - 70px); */
+         display: flex;
+         flex-direction: column;
+         /* align-items: center; */
+         justify-content: center;
+         width: 100%;
+         background: url(../images/Moon.svg) no-repeat center;
+    }
+
+    .hero .hero-text {
+         padding: 2rem;
+         margin-left: -3rem;
+
+         position: relative;
+         top: 3rem;
+         left: 1rem;
+    }
+
+    .hero p {
+         font-size: 2.5rem;
+         font-weight: 900;
+         font-family: 'Montserrat', sans-serif;
+         color: #282936;
+    }
+     .career-text {
+         color: #FE5244;
+    }
+
+    .hero-img {
+         margin-left: 0;
+         width: 100%    ;
+         display: flex;
+         justify-content: flex-end;
+    }
+
+     .hero img {
+         width: 400px;
+         height: auto;
+         position: relative;
+         bottom: -3rem;
+    }
+
+    .why-us-content {
+         padding: 0;
+    }
+    
+    .systems-list {
+         grid-template-columns: 1fr;
+         gap: 2rem;
+    }
+
+    .course {
+         padding: 2rem 5rem;
+    }
+
+    .course .list {
+         grid-template-columns: auto;
+    }
+
+    .total-course-list {
+         width: 100%;
+    }
+
+    .cutoff-text {
+         --max-lines: 3;
+         --line-height: 1.4;
+         max-height: calc(var(--max-lines) * 1em * var(--line-height));
+         line-height: var(--line-height);
+         overflow: hidden;
+         position: relative;
+    }
+
+    .cutoff-text:has(+ .expand-btn:not(:checked))::before {
+         content: '';
+         position: absolute;
+         height: calc(1em * var(--line-height));
+         width: 100%;
+         bottom: 0;
+         pointer-events: none;
+         background: linear-gradient(to bottom, transparent, white);
+    }
+
+    .expand-btn {
+         display: block;
+         appearance: none;
+         border: 1px solid #1d4ed8;
+         background: #1d4ed8;
+         padding: .6em 1em;
+         border-radius: .25em;
+         cursor: pointer;
+         margin-top: 1rem;
+         color: #f5f5f5;
+         transition: 300ms;
+         box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    }
+
+     .expand-btn:hover {
+         background: #003bdd;
+    }
+
+     .expand-btn::before {
+         content: 'Read More';
+    }
+
+     .expand-btn:checked::before {
+         content: 'Collapse';
+    }
+
+     .cutoff-text:has(+ .expand-btn:checked) {
+         max-height: none;
+    }
+    
+     .course-img img {
+         width: 350px;
+         height: 200;
+    }
+
+     .course-description {
+         padding: 1rem;
+         text-align: justify;
+         width: 350px;
+    }
+
+    .view-all {
+         margin-top: 20px;
+    }
+     .view-all .all {
+         margin-left: 72%;
+    }
+
+    .campus .card {
+         width: 200px;
+         height: 200px;
+         border-radius: 7px;
+    }
+     .campus .card img {
+         width: 100%;
+         height: 100%;
+    }
+
+    .campus-list {
+         grid-template-columns: auto auto;
+    }
+    
+     .campus .card .info h1 {
+         font-size: 1rem;
+    }
+
+    .map {
+         padding: 2rem;
+    }
+
+
+    /* .hero-text {
+         position: relative;
+         top: -100px;
+         left: 100px;
+    } */
+}
+
+@media screen and (max-width: 768px) {
+    header {
+         padding: 0 50px;
+    }
+
+    .hamburger{
+         display: block;
+         cursor: pointer;
+         transition: all 0.5s ease-in-out;
+    }
+
+    .line {
+         width: 35px;
+         height: 5px;
+         background: #f5f5f5;
+         transition: all 0.5s ease-in-out;
+    }
+
+    .line::before {
+         content: "";
+         position: absolute;
+         width: 40px;
+         height: 4px;
+         background: #f5f5f5;
+         transition: all 0.5s ease-in-out;
+    }
+
+    .line::after {
+         content: "";
+         position: absolute;
+         width: 30px;
+         height: 4px;
+         background: #f5f5f5;
+         transition: all 0.5s ease-in-out;
+    }
+    .line::before {
+         transform: translateY(-10px);
+    }
+
+    .line::after {
+         transform: translateY(10px);
+    }
+    .hamburger.open .line {
+         transform: translateX(-50px);
+         background: transparent;
+    }
+
+    .hamburger.open .line::before {
+         transform: rotate(45deg) translate(35px, -35px);
+         background: #dc2626;
+         width: 40px;
+    }
+
+    .hamburger.open .line::after {
+         transform: rotate(-45deg) translate(35px, 35px);
+         background: #dc2626;
+         width: 40px;
+    }
+
+    .nav-bar {
+        height: 0;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #1d4ed8;
+        transition: 0.3s;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .nav-bar.active {
+        /* border-top: 1px solid #f5f5f5; */
+        height: 100vh;
+        transition: 0.3s;
+        z-index: 999999;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: -moz-fit-content;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+         opacity: 1;
+    }
+
+    .nav-bar ul li .nav-link{
+     font-size: 1rem;
+    }
+    
+    .nav-bar ul li a {
+         margin-bottom: 15px;
+    }
+
+    .dropdown-content {
+         margin: -1rem;
+    } 
+
+    .hero {
+         /*  min-height: calc(100vh - 70px); */
+         display: flex;
+         flex-direction: column;
+         /* align-items: center; */
+         justify-content: center;
+         width: 100%;
+         background: url(../images/Moon.svg) no-repeat center;
+    }
+
+    .hero .hero-text {
+         padding: 2rem;
+         margin-left: -3rem;
+
+         position: relative;
+         top: 3rem;
+         left: 1rem;
+    }
+
+    .hero p {
+         font-size: 3rem;
+         font-weight: 900;
+         font-family: 'Montserrat', sans-serif;
+         color: #282936;
+    }
+     .career-text {
+         color: #FE5244;
+    }
+
+    .hero-img {
+         margin-left: 0;
+         width: 100%    ;
+         display: flex;
+         justify-content: flex-end;
+    }
+
+     .hero img {
+         width: 400px;
+         height: auto;
+         position: relative;
+         bottom: -9rem;
+    }
+
+    .why-us-content {
+         padding: 0;
+    }
+
+    .systems-list {
+         grid-template-columns: 1fr;
+         gap: 2rem;
+    }
+
+    .course {
+         padding: 2rem 5rem;
+    }
+
+    .course .list {
+         grid-template-columns: auto auto;
+    }
+
+    .total-course-list {
+         width: 100%;
+    }
+
+    .cutoff-text {
+         --max-lines: 3;
+         --line-height: 1.4;
+         max-height: calc(var(--max-lines) * 1em * var(--line-height));
+         line-height: var(--line-height);
+         overflow: hidden;
+         position: relative;
+    }
+
+    .cutoff-text:has(+ .expand-btn:not(:checked))::before {
+         content: '';
+         position: absolute;
+         height: calc(1em * var(--line-height));
+         width: 100%;
+         bottom: 0;
+         pointer-events: none;
+         background: linear-gradient(to bottom, transparent, white);
+    }
+
+    .expand-btn {
+         display: block;
+         appearance: none;
+         border: 1px solid #1d4ed8;
+         background: #1d4ed8;
+         padding: .6em 1em;
+         border-radius: .25em;
+         cursor: pointer;
+         margin-top: 1rem;
+         color: #f5f5f5;
+         transition: 300ms;
+         box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    }
+
+     .expand-btn:hover {
+         background: #003bdd;
+    }
+
+     .expand-btn::before {
+         content: 'Read More';
+    }
+
+     .expand-btn:checked::before {
+         content: 'Collapse';
+    }
+
+     .cutoff-text:has(+ .expand-btn:checked) {
+         max-height: none;
+    }
+    
+     .course-img img {
+         width: 350px;
+         height: 200;
+    }
+
+     .course-description {
+         padding: 1rem;
+         text-align: justify;
+         width: 350px;
+    }
+
+    .view-all {
+         margin-top: 20px;
+    }
+     .view-all .all {
+         margin-left: 85%;
+         word-wrap: nowrap;
+    }
+
+    .campus .card {
+         width: 300px;
+         height: 300px;
+         border-radius: 7px;
+    }
+     .campus .card img {
+         width: 100%;
+         height: 100%;
+    }
+
+    .campus-list {
+         grid-template-columns: auto auto;
+    }
+    
+     .campus .card .info h1 {
+         font-size: 1.5rem;
+    }
+
+    .map {
+         padding: 2rem;
+    }
+}

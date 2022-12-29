@@ -1,7 +1,7 @@
 <header class="header">
     <!-- Hello -->
     <div class="logo">
-        <a href="index.html"><img src="../images/catc-logo.jpg" alt="CATC Logo" width="60" height="60" class="brand-img"></a>
+        <a href="../index.html"><img src="../images/catc-logo.jpg" alt="CATC Logo" width="60" height="60" class="brand-img"></a>
     </div>
     
     <div class="hamburger">
@@ -37,7 +37,7 @@
             <li class="dropbtn">
                 <a class="dropbtn nav-link" id="howTo">FAQs<i class="uil uil-angle-down" id="iconBtn"></i></a>
                 <ul id="myDropdown" class="dropdown-content">
-                    <li><a class="drodown-link" href="how-to.html">How To Enroll?</a></li> 
+                    <li><a class="drodown-link" href="#">How To Enroll?</a></li> 
                     <li><a class="drodown-link" href="../scholarship.html">Scholarships</a></li> 
                     <li><a class="drodown-link" href="../requirements.html">Requirements</a></li> 
                     <li><a class="drodown-link" href="../pages/faqs.html">Academic Policies</a></li> 
@@ -94,4 +94,29 @@
             $(".dropdown-content").slideUp("fast");
         }            
     });
+    
+    const menuBtn = () => { // Open Menu On Small Screen
+        const hamburger = document.querySelector('.hamburger');
+        hamburger.onclick = function () { 
+            const navBar = document.querySelector('.nav-bar');
+            navBar.classList.toggle('active');
+        }
+    }
+
+    const closeBtn = () => { // Animate Close Button
+        const menuBtn = document.querySelector('.hamburger');
+        let menuOpen = false;
+        menuBtn.addEventListener('click', function () {
+        if(!menuOpen) {
+            menuBtn.classList.add('open');
+            menuOpen = true;
+        } else {
+            menuBtn.classList.remove('open');
+            menuOpen = false;;
+        }
+        });
+    }
+
+    closeBtn();
+    menuBtn();
 </script>
