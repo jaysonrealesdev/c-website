@@ -983,6 +983,8 @@ ul.about-dropdown-content {
      justify-items: center;
      align-content: space-evenly;
      align-items: center;
+     place-content: center;
+     place-items: center;
      margin: 0 0 3rem 0;
      gap: 3rem;
 }
@@ -1795,8 +1797,8 @@ ul.about-dropdown-content {
      }
 
      .campus .card {
-          width: 250px;
-          height: 250px;
+          width: 200px;
+          height: 200px;
      }
       .campus .card img {
           width: 100%;
