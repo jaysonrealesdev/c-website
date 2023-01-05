@@ -1,5 +1,5 @@
 const typing = new Typed(".career-text", {
-    strings: ['Solid Career', 'Second Word', 'Third Word'],
+    strings: ['Your Future', 'Solid Career', 'High Skills'],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true

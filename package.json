@@ -5,6 +5,6 @@
     "typed.js": "^2.0.12"
   },
   "scripts": {
-    "start": "npm index.html"
+    "start": "npm start"
   }
 }

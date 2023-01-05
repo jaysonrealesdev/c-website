@@ -1,5 +1,8 @@
 AOS.init(); // Iniliaze Animate On Scroll (AOS) Library
 
+
+
+
 /* let mouseCursor = document.getElementById('cursor');
 let navLink = document.querySelectorAll('.nav-bar li');
 let aLink = document.querySelectorAll('a');
