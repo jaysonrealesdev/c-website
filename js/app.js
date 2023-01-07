@@ -80,6 +80,34 @@ $(function(){
   $(".footerContent").load("footer.html"); 
 });
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+      console.log(entry)
+      if(entry.isIntersecting) {
+          entry.target.classList.add("show")
+      } else {
+          entry.target.classList.remove("show")
+      }
+  })
+})
+
+const hideElements = document.querySelectorAll(".hidden");
+hideElements.forEach((element) => observer.observe(element))
+
+const bgObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+      console.log(entry)
+      if(entry.isIntersecting) {
+          entry.target.classList.add("show-bg")
+      } else {
+          entry.target.classList.remove("show-bg")
+      }
+  })
+})
+
+const hideBg = document.querySelectorAll(".hide-bg");
+hideBg.forEach((element) => bgObserver.observe(element))
+
 // showBackBtn();
 
 
