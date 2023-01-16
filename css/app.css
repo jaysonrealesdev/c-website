@@ -694,6 +694,7 @@ button:hover .button-text {
   max-width: 100%;
   padding: 4rem;
 }
+
 .systems-header h3 {
   text-align: center;
   font-size: 2rem;
@@ -840,13 +841,13 @@ button:hover .button-text {
   margin-bottom: 4rem;
   /* background: rgb(233, 233, 233); */
 }
-.events-header h3 {
+/* .events-header h3 {
   text-align: center;
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 1rem;
-}
+} */
 
 .events-header .filled {
   font-size: 10rem;
@@ -857,6 +858,7 @@ button:hover .button-text {
   font-family: 'Roboto', sans-serif;
   position: relative;
   top: -150px;
+  left: 422px;
   z-index: 1;
   color: #282936;
 }
@@ -869,7 +871,7 @@ button:hover .button-text {
   transform: translateX(-400px);
   font-family: 'Roboto', sans-serif;
   position: relative;
-  left: 100px;
+  left: 520px;
 
   -webkit-text-fill-color: #f5f5f5; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 0.1px;
@@ -933,15 +935,46 @@ button:hover .button-text {
   margin-bottom: 2rem;
   padding: 2rem;
 }
-.promotion-header h3 {
+
+.promotion-header .filled {
+  font-size: 8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  /*  margin-bottom: 1rem; */
+  transform: translateX(-400px);
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  top: -150px;
+  left: 392px;
+  z-index: 1;
+}
+
+.promotion-header .stroked {
+  font-size: 8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  /*  margin-bottom: 1rem; */
+  transform: translateX(-400px);
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  left: 490px;
+  top: -40px;
+
+  -webkit-text-fill-color: #f5f5f5; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: #282936;
+  opacity: 0.1;
+}
+
+/* .promotion-header h3 {
   text-align: center;
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 1rem;
-}
+} */
 .promotion-video {
-  margin: 0 auto;
+  margin: -8rem auto 0 auto;
 }
 
 .promotion-video iframe {
@@ -950,16 +983,47 @@ button:hover .button-text {
 .faculty {
   width: 100%;
 }
-.faculty-header {
+/* .faculty-header {
   padding-top: 2rem;
+} */
+
+.faculty-header .filled {
+  font-size: 10rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  /*  margin-bottom: 1rem; */
+  transform: translateX(-400px);
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  top: -130px;
+  left: 422px;
+  z-index: 1;
 }
-.faculty-header h3 {
+
+.faculty-header .stroked {
+  font-size: 9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  /*  margin-bottom: 1rem; */
+  transform: translateX(-400px);
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  left: 520px;
+
+  -webkit-text-fill-color: #f5f5f5; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: #282936;
+  opacity: 0.1;
+}
+
+/* .faculty-header h3 {
   text-align: center;
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 1rem;
-}
+} */
+
 .faculty-list {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -1061,8 +1125,8 @@ button:hover .button-text {
   transform: translateX(-400px);
   font-family: 'Roboto', sans-serif;
   position: relative;
-  top: -150px;
-  left: 500px;
+  top: -130px;
+  left: 426px;
   z-index: 1;
   color: #282936;
 }
@@ -1075,7 +1139,7 @@ button:hover .button-text {
   transform: translateX(-400px);
   font-family: 'Roboto', sans-serif;
   position: relative;
-  left: 600px;
+  left: 523px;
 
   -webkit-text-fill-color: #f5f5f5; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 0.1px;
@@ -1126,16 +1190,48 @@ button:hover .button-text {
   gap: 30px;
   background: #f9faf9;
 }
-.campus-header {
+/* .campus-header {
   padding-top: 2rem;
+} */
+
+.campus-header .filled {
+  font-size: 10rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  /*  margin-bottom: 1rem; */
+  transform: translateX(-400px);
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  top: -130px;
+  left: -13px;
+
+  z-index: 1;
+  color: #282936;
 }
-.campus h3 {
+
+.campus-header .stroked {
+  font-size: 9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  /*  margin-bottom: 1rem; */
+  transform: translateX(-400px);
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  left: 53px;
+
+  -webkit-text-fill-color: #f5f5f5; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: #282936;
+  opacity: 0.1;
+}
+
+/* .campus h3 {
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 0.5rem;
   text-align: center;
-}
+} */
 .campus-list {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -1145,7 +1241,7 @@ button:hover .button-text {
   align-items: center;
   place-content: center;
   place-items: center;
-  margin: 0 0 3rem 0;
+  margin: -150px 0 3rem 0;
   gap: 3rem;
 }
 .campus .card {
@@ -1444,6 +1540,7 @@ footer ul {
   justify-content: center;
   align-content: center;
 }
+
 .total-course,
 .requirements,
 .scholarship {
@@ -1569,6 +1666,7 @@ footer ul {
   grid-auto-rows: 150px;
   grid-auto-flow: row dense;
   margin-bottom: 2rem;
+  margin-top: -120px;
 }
 .item {
   position: relative;
@@ -1732,18 +1830,50 @@ footer i {
   width: 100%;
   background: #e0e0e0;
   color: #282936;
-  padding: 1rem 2rem;
+  padding: 2.5rem 2rem;
 }
-.map h3 {
+/* .map h3 {
   text-align: center;
   text-transform: uppercase;
   font-size: 2rem;
   margin-bottom: 1rem;
+} */
+
+.map-header .filled {
+  font-size: 8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  /*  margin-bottom: 1rem; */
+  transform: translateX(-400px);
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  top: -150px;
+  left: 392px;
+  z-index: 1;
 }
+
+.map-header .stroked {
+  font-size: 8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  /*  margin-bottom: 1rem; */
+  transform: translateX(-400px);
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  left: 492px;
+  top: -40px;
+
+  -webkit-text-fill-color: #f5f5f5; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: #282936;
+  opacity: 0.1;
+}
+
 .map-wrapper {
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-top: -9rem;
 }
 .map-wrapper iframe {
   width: 1000px;
